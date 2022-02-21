@@ -74,7 +74,7 @@ public class Add_Update_Delete_Search {
 			int p,j;
 			for(j=0; j<n; j++) {
 		      if(delete.equals(task[j])) {   							
-		            p=j;  								// delete
+		            p=j;  						// delete
 		            break;
 		        }
 			}
@@ -98,7 +98,7 @@ public class Add_Update_Delete_Search {
 				if(search.equals(task[j])) {
 					found = 1;
 					break;
-				}							// search
+				}							 // search
 			}
 			if(found == 1) {
 				System.out.println("\n"+search+" is founded at position: "+(j+1));
@@ -111,7 +111,7 @@ public class Add_Update_Delete_Search {
 		
 		else if(choice == 5) {
 			System.exit(0);  							// close
-			System.out.println("-----------------------------");
+			System.out.println("-----------------------------"); 
 		}
 		
 		
