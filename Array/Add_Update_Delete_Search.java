@@ -34,7 +34,7 @@ public class Add_Update_Delete_Search {
 			String add = sc.next();
 			System.out.print("Enter the position to add: ");
 			int pos = sc.nextInt(),j=0;
-											   // add
+											     // add
 			for(int i=0;i<l+1;i++) {
 				if(pos == i+1) {
 					addTask[i] = add;
@@ -59,7 +59,7 @@ public class Add_Update_Delete_Search {
 			System.out.print("Enter the task to include for update: ");
 			String update = sc.next();
 			task[pos-1] = update;
-											// update
+											   // update
 			System.out.println("Updated Task list: ");
 			for(int i=0;i<n;i++) {
 				System.out.println((i+1)+"."+task[i]);
