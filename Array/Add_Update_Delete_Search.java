@@ -34,7 +34,7 @@ public class Add_Update_Delete_Search {
 			String add = sc.next();
 			System.out.print("Enter the position to add: ");
 			int pos = sc.nextInt(),j=0;
-																		// add
+											   // add
 			for(int i=0;i<l+1;i++) {
 				if(pos == i+1) {
 					addTask[i] = add;
@@ -59,7 +59,7 @@ public class Add_Update_Delete_Search {
 			System.out.print("Enter the task to include for update: ");
 			String update = sc.next();
 			task[pos-1] = update;
-																		// update
+											// update
 			System.out.println("Updated Task list: ");
 			for(int i=0;i<n;i++) {
 				System.out.println((i+1)+"."+task[i]);
@@ -74,7 +74,7 @@ public class Add_Update_Delete_Search {
 			int p,j;
 			for(j=0; j<n; j++) {
 		      if(delete.equals(task[j])) {   							
-		            p=j;  // 2
+		            p=j;  								// delete
 		            break;
 		        }
 			}
@@ -98,7 +98,7 @@ public class Add_Update_Delete_Search {
 				if(search.equals(task[j])) {
 					found = 1;
 					break;
-				}														// search
+				}							// search
 			}
 			if(found == 1) {
 				System.out.println("\n"+search+" is founded at position: "+(j+1));
@@ -110,7 +110,7 @@ public class Add_Update_Delete_Search {
 		
 		
 		else if(choice == 5) {
-			System.exit(0);  											// close
+			System.exit(0);  							// close
 			System.out.println("-----------------------------");
 		}
 		
