@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class ArrayList_all_Methods {
+	private static final String Sankha = null;
+
 	public static void main(String[] args) {
 		
 		ArrayList<String> str = new ArrayList<String>();
@@ -83,8 +85,19 @@ System.out.println("\n----------------------------------------------------------
 		      System.out.println(i);
 	    }
 		
+System.out.println("\n------------------------------------------------------------------");	
+
+		System.out.println("ArrayList indexOf() method: To identify index");
+		int pos = str.indexOf("Sankha");
+		System.out.println("The element is at index : " + pos);
 		
-			
+System.out.println("\n------------------------------------------------------------------");	
+
+		System.out.println("ArrayList contains() method: To detect present or not");
+		boolean ans = str.contains("Sankha");
+		System.out.println(ans);
+		
+		
 	}
 
 }
