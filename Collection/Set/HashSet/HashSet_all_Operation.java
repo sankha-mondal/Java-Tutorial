@@ -28,29 +28,29 @@ public class HashSet_all_Operation {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("HashSet contains() method: To detect present or not");
-		boolean ans = car.contains("BMW");																//  contains()
+		boolean ans = car.contains("BMW");								//  contains()
 		System.out.println(ans);
 			
 System.out.println("\n------------------------------------------------------------------");			
 			
 		System.out.println("\nArrayList remove() method: To remove particular element");
-		car.remove(0);																					//  remove()
+		car.remove(0);										//  remove()
 		System.out.println(car);
 			
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList size() method: To find out how many items there are");	
-		System.out.println("Length of HashSet: " + car.size());											//  size()
+		System.out.println("Length of HashSet: " + car.size());	  					//  size()
 			
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList isEmpty() method: To find out how many items there are");
-		System.out.println(car.isEmpty());   															//  isEmpty()
+		System.out.println(car.isEmpty());   								//  isEmpty()
 			
 System.out.println("\n------------------------------------------------------------------");	
 
-		System.out.println("\nLoop Through an HashSet:");
-		for (String i : car) {
+		System.out.println("\nLoop Through a HashSet:");
+		for (String i : car) { 										//  Loop Through a HashSet
 			  System.out.print(i + " ");
 			}
 			
