@@ -24,13 +24,13 @@ public class LinkedList_all_Method {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("LinkedList addFirst() method: To add list element at 0th index");
-		car.addFirst("Maruti");				   						//  addFirst()
+		car.addFirst("Maruti");				   							//  addFirst()
 		System.out.println(car);
 
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("LinkedList addLast() method: To add list element at Last-th index");
-		car.addLast("Maruti");										//  addLast()
+		car.addLast("Maruti");											//  addLast()
 		System.out.println(car);
 
 System.out.println("------------------------------------------------------------------"); 
@@ -42,7 +42,7 @@ System.out.println("------------------------------------------------------------
 System.out.println("------------------------------------------------------------------"); 
 			
 		System.out.println("\nLinkedList get() method: To Access an Item");
-		System.out.println(car.get(2));									//  get()
+		System.out.println(car.get(2));										//  get()
 		    
 System.out.println("------------------------------------------------------------------");
 
@@ -57,7 +57,7 @@ System.out.println("------------------------------------------------------------
 System.out.println("------------------------------------------------------------------"); 	
 
 		System.out.println("\nArrayList remove() method: To remove particular element from LinkedList");
-		car.remove(0);											//  remove()
+		car.remove(0);												//  remove()
 		System.out.println(car);
 			
 System.out.println("\n------------------------------------------------------------------");
@@ -81,7 +81,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("LinkedList peek(): the head of this list, or null if this list is empty");
-		System.out.println(car.peek());									//  peek()
+		System.out.println(car.peek());										//  peek()
 
 System.out.println("\n------------------------------------------------------------------");	
 
@@ -112,7 +112,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("LinkedList indexOf() method: To identify index");
-		int pos = car.indexOf("Royal");									//  indexOf()
+		int pos = car.indexOf("Royal");										//  indexOf()
 		System.out.println("The element is at index : " + pos);
 			
 System.out.println("------------------------------------------------------------------"); 	
