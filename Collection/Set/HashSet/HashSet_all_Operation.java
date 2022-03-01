@@ -15,7 +15,7 @@ public class HashSet_all_Operation {
 		System.out.println("HashSet add() method: To add list elements");
 		    car.add("Volvo");
 		    car.add("BMW");
-		    car.add("Ford");                        //  To add list elements  						//  add()
+		    car.add("Ford");                        //  To add list elements  					//  add()
 		    car.add("Mazda");
 		    System.out.println(car);
 		    
