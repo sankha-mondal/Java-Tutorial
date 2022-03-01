@@ -11,7 +11,7 @@ public class LinkedList_all_Method {
 		    System.out.println("LinkedList add() method: To add list elements");
 		    car.add("Volvo");
 		    car.add("BMW");
-		    car.add("Ford");                        //  To add list elements
+		    car.add("Ford");                        //  To add list elements   									  //  add()
 		    car.add("Mazda");
 		    System.out.println(car);
 		    
