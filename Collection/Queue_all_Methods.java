@@ -38,21 +38,21 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Queue poll(): Return head of queue and remove from queue");
-			String poll = animal1.poll();										//  poll()
+			String poll = animal1.poll();								//  poll()
 				System.out.println("Head of queue: " + poll);
 				System.out.println(animal1);
 	
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("Queue element(): Retrieves,but does not remove,the head from queue");
-			String element = animal1.element();									//  element()
+			String element = animal1.element();							//  element()
 				System.out.println("Head of queue: " + element);
 				System.out.println(animal1);  	
 	
-				System.out.println("\n------------------------------------------------------------------");
+System.out.println("\n------------------------------------------------------------------");
 
 System.out.println("Queue peek(): Retrieves,but does not remove,the head from queue");
-			String peek = animal1.peek();										//  peek()
+			String peek = animal1.peek();								//  peek()
 					System.out.println("Head of queue: " + peek);
 					System.out.println(animal1);
 	}
