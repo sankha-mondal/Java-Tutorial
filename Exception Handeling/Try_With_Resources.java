@@ -10,14 +10,20 @@ public class Try_With_Resources {
 		
 		try(FileOutputStream fos = new FileOutputStream(filepath)) {
 			
-			String content = "Welcome to try-with-resources";
-			fos.write(content.getBytes());
+			String content = "Welcome to try-with-resources";      // Content that you want to put inside the New_File.
+			fos.write(content.getBytes());   //  getBytes() helps to convert String into byte format.
 			
 			System.out.println("Content written to file successfully");
 		}
 		catch (IOException e) {
 			System.out.println("Errpr Occured: " + e);
 		}
-	}
 
+    /*   1) Passes the responsibilty of closing down of resources to java.
+           2) Developer can focus on code logic not in plumbing code.   */
+
+
+
+
+	}
 }
