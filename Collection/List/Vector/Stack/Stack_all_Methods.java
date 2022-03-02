@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Stack_all_Methods {
 	public static void main(String[] args) {
 		
-		Stack<Integer> stk= new Stack<>();     							//  Declaration of stack
+		Stack<Integer> stk= new Stack<>();     							//  Declaration of stack (LIFO DS)
 		
 		System.out.println("Stack empty():To ckeck stack is empty or not");
 		boolean result = stk.empty();  
