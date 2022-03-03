@@ -6,11 +6,11 @@ public class Queue_all_Methods {
 	public static void main(String[] args) {
 
 		
-		Queue<String> animal1 = new LinkedList<>(); 	 	// LinkedList implementation of Queue
+		Queue<String> animal1 = new LinkedList<>(); 	 	// LinkedList implementation of Queue (FIFO DS)
 		
 		Queue<String> animal2 = new ArrayDeque<>();		// Array implementation of Queue (FIFO DS)
 
-		Queue<String> animal3 = new PriorityQueue<>(); 		// Priority Queue implementation of Queue
+		Queue<String> animal3 = new PriorityQueue<>(); 		// Priority Queue implementation of Queue (FIFO DS)
 		
 		System.out.println("Queue add() method: To add list elements");
 			animal1.add("cow");
