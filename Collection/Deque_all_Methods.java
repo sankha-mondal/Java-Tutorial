@@ -52,26 +52,26 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque getLast(): Retrieves, but does not remove,the last element from deque.");
-		String 	getLast  = dqu.getLast();    												//   getLast()
+		String 	getLast  = dqu.getLast();    									//   getLast()
 		System.out.println(getLast);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offer(): Inserts the specified element into the queue");
 		dqu.offer("Rohit");
-		dqu.offer("Joti");																			//  offer()
+		dqu.offer("Joti");											//  offer()
 		System.out.println(dqu);		
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offerFirst(): Inserts the specified element at HEAD into the queue");
-		dqu.offerFirst("Amar");																		//  offerFirst()
+		dqu.offerFirst("Amar");										//  offerFirst()
 		System.out.println(dqu);	
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offerLast(): Inserts the specified element at TAIL into the queue");
-		dqu.offerLast("Akbar");																//    offerLast()
+		dqu.offerLast("Akbar");										//    offerLast()
 		System.out.println(dqu);		
 		
 System.out.println("\n------------------------------------------------------------------");	
