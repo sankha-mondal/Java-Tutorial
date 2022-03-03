@@ -9,7 +9,7 @@ public class Deque_all_Methods {
 		
 		System.out.println("Deque add() method: To add ArrayDeque elements");
 		   dqu.add("Ravi");    
-		   dqu.add("Vijay");     								//  add()
+		   dqu.add("Vijay");     										//  add()
 		   dqu.add("Ajay"); 
 		   System.out.println(dqu);
 		   
@@ -22,31 +22,31 @@ public class Deque_all_Methods {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque addFirst(): Inserts specific element at the HEAD of queue");
-		dqu.addFirst("Gita");    								//  addFirst()
+		dqu.addFirst("Gita");    										//  addFirst()
 		System.out.println(dqu);
 			
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque addLast(): Inserts specific element at the TAIL of queue");
-		dqu.addLast("Mita");    								//  addLast()
+		dqu.addLast("Mita");    										//  addLast()
 		System.out.println(dqu);			
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("LinkedList contains() method: To detect present or not");			
-		boolean ans = dqu.contains("Vijay");						//  contains()
+		boolean ans = dqu.contains("Vijay");									//  contains()
 		System.out.println(ans);
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque element(): Retrieves, but does not remove, the head from queue");
-		String element  = dqu.element();    
+		String element  = dqu.element();    									//  element()
 		System.out.println(element);
 			
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque getFirst(): Retrieves, but does not remove,the first element from deque.");
-		String getFirst  = dqu.getFirst();    												//  getFirst()
+		String getFirst  = dqu.getFirst();    									//  getFirst()
 		System.out.println(getFirst);
 		
 System.out.println("\n------------------------------------------------------------------");	
