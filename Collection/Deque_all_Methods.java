@@ -9,7 +9,7 @@ public class Deque_all_Methods {
 		
 		System.out.println("Deque add() method: To add ArrayDeque elements");
 		   dqu.add("Ravi");    
-		   dqu.add("Vijay");     										//  add()
+		   dqu.add("Vijay");     											//  add()
 		   dqu.add("Ajay"); 
 		   System.out.println(dqu);
 		   
@@ -22,105 +22,105 @@ public class Deque_all_Methods {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque addFirst(): Inserts specific element at the HEAD of queue");
-		dqu.addFirst("Gita");    										//  addFirst()
+		dqu.addFirst("Gita");    											//  addFirst()
 		System.out.println(dqu);
 			
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque addLast(): Inserts specific element at the TAIL of queue");
-		dqu.addLast("Mita");    										//  addLast()
+		dqu.addLast("Mita");    											//  addLast()
 		System.out.println(dqu);			
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("LinkedList contains() method: To detect present or not");			
-		boolean ans = dqu.contains("Vijay");									//  contains()
+		boolean ans = dqu.contains("Vijay");										//  contains()
 		System.out.println(ans);
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque element(): Retrieves, but does not remove, the head from queue");
-		String element  = dqu.element();    									//  element()
+		String element  = dqu.element();    										//  element()
 		System.out.println(element);
 			
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque getFirst(): Retrieves, but does not remove,the first element from deque.");
-		String getFirst  = dqu.getFirst();    									//  getFirst()
+		String getFirst  = dqu.getFirst();    										//  getFirst()
 		System.out.println(getFirst);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque getLast(): Retrieves, but does not remove,the last element from deque.");
-		String 	getLast  = dqu.getLast();    									//   getLast()
+		String 	getLast  = dqu.getLast();    										//   getLast()
 		System.out.println(getLast);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offer(): Inserts the specified element into the queue");
 		dqu.offer("Rohit");
-		dqu.offer("Joti");											//  offer()
+		dqu.offer("Joti");												//  offer()
 		System.out.println(dqu);		
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offerFirst(): Inserts the specified element at HEAD into the queue");
-		dqu.offerFirst("Amar");											//  offerFirst()
+		dqu.offerFirst("Amar");												//  offerFirst()
 		System.out.println(dqu);	
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque offerLast(): Inserts the specified element at TAIL into the queue");
-		dqu.offerLast("Akbar");											//    offerLast()
+		dqu.offerLast("Akbar");												//    offerLast()
 		System.out.println(dqu);		
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque peek(): Retrieves, but does not remove, the HEAD from queue");
-		System.out.println("HEAD element: " + dqu.peek());							//  peek()
+		System.out.println("HEAD element: " + dqu.peek());								//  peek()
 		System.out.println(dqu);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque peekFirst(): Retrieves, but does not remove, the HEAD from queue");
-		System.out.println("HEAD element: " + dqu.peekFirst());							//  peekFirst()
+		System.out.println("HEAD element: " + dqu.peekFirst());								//  peekFirst()
 		System.out.println(dqu);		
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque peekLast(): Retrieves, but does not remove, the TAIL from queue");
-		System.out.println("TAIL element: " + dqu.peekLast());  						//  peekLast()
+		System.out.println("TAIL element: " + dqu.peekLast());  							//  peekLast()
 		System.out.println(dqu);		
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque poll(): Retrieves and removes the HEAD from queue");
-		System.out.println("TAIL element: " + dqu.poll());							//  poll()
+		System.out.println("TAIL element: " + dqu.poll());								//  poll()
 		System.out.println(dqu);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque pollFirst(): Retrieves and removes the HEAD from queue");
-		System.out.println("TAIL element: " + dqu.pollFirst());							//  pollFirst()
+		System.out.println("TAIL element: " + dqu.pollFirst());								//  pollFirst()
 		System.out.println(dqu);
 
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque pollLast(): Retrieves and removes the TAIL from queue");
-		System.out.println("TAIL element: " + dqu.pollLast()); 			    				//  pollLast()
+		System.out.println("TAIL element: " + dqu.pollLast()); 			    					//  pollLast()
 		System.out.println(dqu); 
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque pop(): Retrieves and removes the HEAD from queue");
-		System.out.println("HEAD element: " + dqu.pop());							//  pop()
+		System.out.println("HEAD element: " + dqu.pop());								//  pop()
 		System.out.println(dqu);
 	
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("Deque push():Pushes an element at HEAd end of queue");
 		dqu.push("Tom");
-		dqu.push("Jerry");											//  push()
+		dqu.push("Jerry");												//  push()
 		System.out.println(dqu);
 		
 System.out.println("\n------------------------------------------------------------------");	
