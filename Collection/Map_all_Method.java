@@ -21,12 +21,12 @@ public class Map_all_Method {
 System.out.println("\n------------------------------------------------------------------");
 
 	System.out.println("\nHashMap get() method: To Access an Item");
-	System.out.println(capital.get("England"));					//  get()
+	System.out.println(capital.get("England"));								//  get()
 	
 System.out.println("\n------------------------------------------------------------------");
 
 	System.out.println("\nHashMap remove() method: To remove particular element");
-	capital.remove("England");							//  remove()
+	capital.remove("England");										//  remove()
     System.out.println(capital);
 	
 System.out.println("\n------------------------------------------------------------------");
@@ -40,7 +40,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 	
 	System.out.println("\nHashMap replace(): To replace according to key");
-	String value = capital.replace(2, "India");							//  replace()
+	String value = capital.replace(2, "India");								//  replace()
 	System.out.println("Updated Languages: " + capital);
 
 System.out.println("\n------------------------------------------------------------------");	
