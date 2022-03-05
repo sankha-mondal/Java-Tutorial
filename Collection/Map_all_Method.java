@@ -33,20 +33,20 @@ System.out.println("\n----------------------------------------------------------
 	
 	System.out.println("\nLoop Through a HashMap");
 	System.out.println("Use keySet() and values() if you only want the keys & values:");
-	for (int i : capital.keySet()) {							//  keySet() &  values()
+	for (int i : capital.keySet()) {										//  keySet() &  values()
 		  System.out.println("key: " + i + " value: " + capital.get(i));
 		}
 	
 System.out.println("\n------------------------------------------------------------------");	
 	
 	System.out.println("\nHashMap replace(): To replace according to key");
-	String value = capital.replace(2, "India");				//  replace()
+	String value = capital.replace(2, "India");							//  replace()
 	System.out.println("Updated Languages: " + capital);
 
 System.out.println("\n------------------------------------------------------------------");	
 	
 	System.out.println("\nHashMap replace(): If the specified key is not already associated with a value ");
-	capital.putIfAbsent(2, "USA");									//  putIfAbsent()
+	capital.putIfAbsent(2, "USA");											//  putIfAbsent()
     	System.out.println("Updated Languages: " + capital);
     
 	}
