@@ -14,7 +14,7 @@ public class User_Define_Unchecked_Ex {
 	public static void main(String[] args) {
 		
 		int age = 16;
-		if(age<18) {
+		if(age < 18) {
 			throw new UnderAgeException("Not elligible for vote");
 		}
 		else {
