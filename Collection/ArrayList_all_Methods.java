@@ -16,7 +16,7 @@ public class ArrayList_all_Methods {
 		str.add("Amar");
 		str.add("Akbar");
 		str.add("Antony");
-		str.add("Ram");							//  To add array elements 
+		str.add("Ram");											//   add() 
 		str.add("Gita");
 		str.add(3, "Moloy");
 		str.add(5, "Divya");
@@ -25,22 +25,23 @@ public class ArrayList_all_Methods {
 		System.out.println(str);				//  To print array elements
 		
 		System.out.println("\nArrayList Elements: ");
+		
 		Iterator<String> it = str.iterator();	//  Converting to Iterator
 		while(it.hasNext()) {
-			System.out.println(it.next());      //  To print array elements
+			System.out.println(it.next());      		//  To print array elements
 		} 
 		
 System.out.println("------------------------------------------------------------------"); 
 			
 		System.out.println("\nArrayList get() method: To Access an Item");
 		System.out.println(str.get(2));
-		System.out.println(str.get(3));
+		System.out.println(str.get(3));									//   get()
 		System.out.println(str.get(5));
 		
 System.out.println("------------------------------------------------------------------"); 
 		
 		System.out.println("\nArrayList set() method: To Change an Item");
-		str.set(2,"Sankha");
+		str.set(2,"Sankha");										//   set()								
 		System.out.println(str);
 		
 System.out.println("------------------------------------------------------------------"); 	
