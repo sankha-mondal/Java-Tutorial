@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class Set_all_Operation {
+public class Set_all_Methods {
 	public static void main(String[] args) {
 
 		System.out.println("Declaration of HashSet Object:");
