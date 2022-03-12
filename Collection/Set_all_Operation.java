@@ -1,21 +1,22 @@
-package com.Set.HashSet;
+package com;
+
 
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class HashSet_all_Operation {
+public class Set_all_Operation {
 	public static void main(String[] args) {
 
 		System.out.println("Declaration of HashSet Object:");
 		
-		HashSet<String> car = new HashSet<String>();		//   Declaration of HashSet
-		Set<Integer> set = new HashSet<Integer>();		//   Declaration of Set
+		HashSet<String> car = new HashSet<String>();
+		Set<Integer> set = new HashSet<Integer>();
 		
 		System.out.println("HashSet add() method: To add list elements");
 		    car.add("Volvo");
 		    car.add("BMW");
-		    car.add("Ford");                        //  To add list elements  					//  add()
+		    car.add("Ford");                        //  To add list elements  						//  add()
 		    car.add("Mazda");
 		    System.out.println(car);
 		    
@@ -28,32 +29,33 @@ public class HashSet_all_Operation {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("HashSet contains() method: To detect present or not");
-		boolean ans = car.contains("BMW");									//  contains()
+		boolean ans = car.contains("BMW");																//  contains()
 		System.out.println(ans);
 			
 System.out.println("\n------------------------------------------------------------------");			
 			
 		System.out.println("\nArrayList remove() method: To remove particular element");
-		car.remove(0);												//  remove()
+		car.remove(0);																					//  remove()
 		System.out.println(car);
 			
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList size() method: To find out how many items there are");	
-		System.out.println("Length of HashSet: " + car.size());	  						//  size()
+		System.out.println("Length of HashSet: " + car.size());											//  size()
 			
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList isEmpty() method: To find out how many items there are");
-		System.out.println(car.isEmpty());   									//  isEmpty()
+		System.out.println(car.isEmpty());   															//  isEmpty()
 			
 System.out.println("\n------------------------------------------------------------------");	
 
-		System.out.println("\nLoop Through a HashSet:");
-		for (String i : car) { 											//  Loop Through a HashSet
+		System.out.println("\nLoop Through an HashSet:");
+		for (String i : car) {
 			  System.out.print(i + " ");
 			}
 			
 	}
 
 }
+
