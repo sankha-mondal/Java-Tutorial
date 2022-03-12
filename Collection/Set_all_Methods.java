@@ -29,7 +29,7 @@ public class Set_all_Methods {
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("HashSet contains() method: To detect present or not");
-		boolean ans = car.contains("BMW");																//  contains()
+		boolean ans = car.contains("BMW");									//  contains()
 		System.out.println(ans);
 			
 System.out.println("\n------------------------------------------------------------------");			
