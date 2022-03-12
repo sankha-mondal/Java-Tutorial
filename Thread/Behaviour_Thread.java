@@ -25,9 +25,10 @@ class Thread2 implements Runnable {
 }
 
 
-public class Thread_Behaviour {
+public class Behaviour_Thread {
 	public static void main(String[] args) {
 
+		
 		for(int i=0;i<5;i++) {
 			Thread1 t1 = new Thread1();
 			t1.start();
