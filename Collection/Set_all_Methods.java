@@ -16,7 +16,7 @@ public class Set_all_Methods {
 		System.out.println("HashSet add() method: To add list elements");
 		    car.add("Volvo");
 		    car.add("BMW");
-		    car.add("Ford");                        //  To add list elements  					//  add()
+		    car.add("Ford");                        //  To add list elements  					  //  add()
 		    car.add("Mazda");
 		    System.out.println(car);
 		    
@@ -46,7 +46,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList isEmpty() method: To find out how many items there are");
-		System.out.println(car.isEmpty());   										//  isEmpty()
+		System.out.println(car.isEmpty());   									//  isEmpty()
 			
 System.out.println("\n------------------------------------------------------------------");	
 
