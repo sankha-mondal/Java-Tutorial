@@ -14,13 +14,13 @@ public class Concurrent_Collections {
 		list.add(40);
 		
 		for(int i : list) {
-			System.out.print(i + " ");
+			System.out.print(i + " ");	//  10 20 30 40 
 			list.add(50);
 		}
 		System.out.println();
 
 		for(int i : list) {
-			System.out.print(i + " ");
+			System.out.print(i + " ");	//   10 20 30 40 50 50 50 50
 		}
 	}
 
