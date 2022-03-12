@@ -47,19 +47,19 @@ System.out.println("------------------------------------------------------------
 System.out.println("------------------------------------------------------------------"); 	
 
 		System.out.println("\nArrayList remove() method: To Clear ArrayList");
-		str.remove(0);	
+		str.remove(0);											//   remove()   
 		System.out.println(str);
 		
 System.out.println("------------------------------------------------------------------"); 	
 
 		System.out.println("\nArrayList clear() method: To Remove all Item");
-		/*str.clear();
+		/*str.clear();											//   clean()
 		System.out.println(str);*/
 
 System.out.println("------------------------------------------------------------------"); 	
 
 		System.out.println("\nArrayList size() method: To Remove an Item"); 
-		System.out.println(str.size());
+		System.out.println(str.size());									//   size()
 			
 System.out.println("------------------------------------------------------------------"); 	
 
@@ -67,7 +67,7 @@ System.out.println("------------------------------------------------------------
 		System.out.println("ArrayList Elements: ");
 		for (int i=0; i<str.size(); i++) {
 			System.out.print(str.get(i) + "  ");
-		}
+		}												//   Loop Through
 		System.out.println("\nArrayList Elements: ");
 		for (String i : str) {
 		      System.out.print(i+ "  ");
