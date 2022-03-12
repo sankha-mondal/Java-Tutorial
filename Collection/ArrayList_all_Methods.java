@@ -76,26 +76,26 @@ System.out.println("------------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------"); 	
 
   		System.out.println("Sort an ArrayList: Ascending order");
-		Collections.sort(str);
+		Collections.sort(str);										//   Ascending order
 		for (String i : str) {
 		      System.out.println(i);
 	    }
 		System.out.println("\nSort an ArrayList: Descending order");
 		Collections.sort(str,Comparator.reverseOrder() );
-		for (String i : str) {
+		for (String i : str) {										//   Descending order
 		      System.out.println(i);
 	    }
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("ArrayList indexOf() method: To identify index");
-		int pos = str.indexOf("Sankha");
+		int pos = str.indexOf("Sankha");							//   indexOf()
 		System.out.println("The element is at index : " + pos);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("ArrayList contains() method: To detect present or not");
-		boolean ans = str.contains("Sankha");
+		boolean ans = str.contains("Sankha");						//   contains()
 		System.out.println(ans);
 		
 		
