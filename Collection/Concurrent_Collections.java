@@ -18,6 +18,7 @@ public class Concurrent_Collections {
 			list.add(50);
 		}
 		System.out.println();
+
 		for(int i : list) {
 			System.out.print(i + " ");
 		}
