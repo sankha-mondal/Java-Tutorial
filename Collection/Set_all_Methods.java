@@ -35,7 +35,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");			
 			
 		System.out.println("\nArrayList remove() method: To remove particular element");
-		car.remove(0);											//  remove()
+		car.remove(0);												//  remove()
 		System.out.println(car);
 			
 System.out.println("\n------------------------------------------------------------------");
@@ -46,7 +46,7 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");
 
 		System.out.println("\nArrayList isEmpty() method: To find out how many items there are");
-		System.out.println(car.isEmpty());   															//  isEmpty()
+		System.out.println(car.isEmpty());   										//  isEmpty()
 			
 System.out.println("\n------------------------------------------------------------------");	
 
