@@ -89,13 +89,13 @@ System.out.println("\n----------------------------------------------------------
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("ArrayList indexOf() method: To identify index");
-		int pos = str.indexOf("Sankha");							//   indexOf()
+		int pos = str.indexOf("Sankha");								//   indexOf()
 		System.out.println("The element is at index : " + pos);
 		
 System.out.println("\n------------------------------------------------------------------");	
 
 		System.out.println("ArrayList contains() method: To detect present or not");
-		boolean ans = str.contains("Sankha");						//   contains()
+		boolean ans = str.contains("Sankha");								//   contains()
 		System.out.println(ans);
 		
 		
