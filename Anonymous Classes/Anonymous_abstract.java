@@ -1,6 +1,6 @@
-	//   Anonymous class is nothing but a class without any name.
-	//   They are used to override a class method or interface.
-	//   Anonymous classes in Java help us to write more concise and readable code.
+//   Anonymous class is nothing but a class without any name.
+//   They are used to override a class method or interface.
+//   Anonymous classes in Java help us to write more concise and readable code.
 
 abstract class Vehicle{
     abstract void drive();
