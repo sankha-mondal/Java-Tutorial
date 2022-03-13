@@ -9,7 +9,7 @@ public class Mathematical_Operation {
 		System.out.println("Anonymously: ");
 		Math obj1 = new Math() {
 			
-			@Override						//  Anonymously
+			@Override							//  Anonymously
 			public int getSqure(int n) {
 				return n*n;
 			}
@@ -18,7 +18,7 @@ public class Mathematical_Operation {
 		
 		
 		System.out.println("\nUsing Lambda Expression: ");
-		Math obj2 = (n) -> n*n;									//   Lambda Expression
+		Math obj2 = (n) -> n*n;							//   Lambda Expression
 		System.out.println("The Squre of 5: "+ obj2.getSqure(5));
 		
 	}
