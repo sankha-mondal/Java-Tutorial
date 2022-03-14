@@ -12,7 +12,7 @@ public class Lambda_Expressions_01 {
 	public static void main(String[] args) {
 
 		LambaExp obj = (a, b) -> {
-			System.out.println("The value of a & b: "+a+","+b);
+			System.out.println("The value of a & b: "+a+","+b);	//  O/p: The value of a & b: 10,20
 		};
 		obj.demo(10, 20);
 		
