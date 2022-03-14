@@ -1,6 +1,6 @@
 //  Lambda expressions were introduced in Java 8.
 //  They are similar to methods, but they don't need a name.
-//  Interface is must be  Functional Interface, default, Static method 
+//  Interface is must be  Functional Interface, & may be default, Static method 
 
 interface LambaExpt {
 	void m1(String s, int r);
