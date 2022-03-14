@@ -23,8 +23,7 @@ public class Stream_Operations {
 		 * 		forEach
 		 */
 
-		
-/* **********************************  -:Stream Intermediate Operations:-  ******************************** */
+/* ********************************************************  -:Stream Intermediate Operations:-  ************************************************************ */
 		
 		
 		//  Distinct Operation -->
@@ -37,13 +36,13 @@ public class Stream_Operations {
 		name.add("Vijoy");
 		name.add("Rahul");
 		
-		Stream<String> nameStream = name.stream();					//  Converting into Stream 
+		Stream<String> nameStream = name.stream();			//  Converting into Stream 
 		Stream<String> nameDistinct = nameStream.distinct();		//  Stream-> Distinct Operation
 		
 		nameDistinct.forEach( (n) -> System.out.print(n + " ")); 	//  O/p: Rahul Lorry Vijoy  
 		 */
 		 
-//---------------------------------------------------------------------------------------------------------------		
+//____________________________________________________________________________________________________________________________________________________________		
 		
 		//	Map Operation -->
 		
@@ -54,18 +53,18 @@ public class Stream_Operations {
 		sqNumber.forEach( (num) -> System.out.print(num + " ")); 	//  O/p: 1 4 9 16 25  
 		 */
 		
-//---------------------------------------------------------------------------------------------------------------		
+//____________________________________________________________________________________________________________________________________________________________		
 		
 		//	Filter Operation -->
 		
 		/**
 		Stream<Integer> number = Stream.of(1,2,3,4,5,6,7,8,9);
-		Stream<Integer> evenNumber = number.filter(num -> num%2==0);	//  Stream-> Filter Operation
+		Stream<Integer> evenNumber = number.filter(num -> num%2==0);		//  Stream-> Filter Operation
 		
 		evenNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 2 4 6 8 
 		*/
 		
-//---------------------------------------------------------------------------------------------------------------		
+//____________________________________________________________________________________________________________________________________________________________		
 		
 		//	Sorted Operation -->
 		
@@ -77,33 +76,33 @@ public class Stream_Operations {
 		name.add("Vijoy");
 		name.add("Anita");
 		
-		Stream<String> nameStream = name.stream();					//  Converting into Stream 
+		Stream<String> nameStream = name.stream();				//  Converting into Stream 
 		Stream<String> nameSorted = nameStream.sorted();			//  Stream-> Sorted Operation
 		
-		nameSorted.forEach( (n) -> System.out.print(n + " ")); 		//  O/p: Anita Lorry Rahul Rahul Vijoy
+		nameSorted.forEach( (n) -> System.out.print(n + " ")); 			//  O/p: Anita Lorry Rahul Rahul Vijoy
 		*/
 		
-//---------------------------------------------------------------------------------------------------------------		
+//____________________________________________________________________________________________________________________________________________________________		
 		
 		//	Limit Operation -->
 		
 		/**
 		Stream<Integer> number = Stream.of(10,40,30,70,80,20,50,70);
-		Stream<Integer> limitNumber = number.limit(5);					//  Stream-> Limit Operation
+		Stream<Integer> limitNumber = number.limit(5);				//  Stream-> Limit Operation
 		
 		limitNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 10 40 30 70 80 
 		*/
 		
-/* **********************************  -:Stream Terminal Operations:-  ******************************** */
+/* ********************************************************  -:Stream Terminal Operations:-  **************************************************************** */
 		
 		//	Count Operation -->
 		
 		/**
 		Stream<Integer> number = Stream.of(10,40,30,70,80,20,50,70);
-		System.out.println(number.count());   						//  Stream-> Count Operation,  O/p: 8
+		System.out.println(number.count());   				//  Stream-> Count Operation,  O/p: 8
 		*/
 		
-//---------------------------------------------------------------------------------------------------------------		
+//____________________________________________________________________________________________________________________________________________________________		
 		
 		//	Collect Operation -->	
 		
@@ -112,10 +111,10 @@ public class Stream_Operations {
 		//  Convert the above Stream of number into List of number
 		
 		List<Integer> list = number.collect(Collectors.toList());	//  Stream-> Collect Operation
-		System.out.println(list);									//  O/p: [10, 40, 80, 20, 50, 70]
+		System.out.println(list);					//  O/p: [10, 40, 80, 20, 50, 70]
 		*/
 
-//---------------------------------------------------------------------------------------------------------------
+//____________________________________________________________________________________________________________________________________________________________
 		
 		//	forEach Operation -->
 		
