@@ -1,3 +1,7 @@
+/*	Consumer Functional Interface can be used in all contexts 
+*       where an object needs to consumed
+*/
+
 import java.util.Objects;
 import java.util.function.Consumer;
 

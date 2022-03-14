@@ -18,5 +18,9 @@ public class Collection_Lambda_Expressions {
 		
 		System.out.println("\n\nAfter using Lambda Expressions:");
 		list.forEach( (n) -> System.out.print(n + " "));
+		
+		/*   Note:  forEach() is a Termination Operation. If we use in program then the 
+		*    rest of code will not execute and throws an Exception.
+		*/
 	}
 }
