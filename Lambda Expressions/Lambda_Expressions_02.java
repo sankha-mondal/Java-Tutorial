@@ -13,10 +13,10 @@ public class Lambda_Expressions_02 {
 	public static void main(String[] args) {
 
 		LambaExpt lam = (s, r) -> {
-			System.out.println(s+": Roll No: "+r);
+			System.out.println(s+": Roll No: "+r);		   
 		};
-		lam.m1("Sankha", 73);
-		lam.m2();
+		lam.m1("Sankha", 73);		//  Sankha: Roll No: 73
+		lam.m2();			//  Hello Eneryone
 		
 	}
 }
