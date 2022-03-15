@@ -15,6 +15,9 @@ public class Stream_Operations {
 		 * 		Filter
 		 * 		Sorted
 		 * 		Limit
+		 * 		skip
+		 * 		allMatch
+		 * 		anyMatch
 		 * 
 		 * Stream Terminal Operations:-
 		 * 
@@ -22,21 +25,28 @@ public class Stream_Operations {
 		 * 		Collect
 		 * 		forEach
 		 */
+		
+		List<String> nameList = new ArrayList<>();
+		nameList.add("Rahul");
+		nameList.add("Lorry");
+		nameList.add("Rahul");
+		nameList.add("Vijoy");
+		nameList.add("Rahul");
+		
+		List<Integer> numList = new ArrayList<>();
+		numList.add(100);
+		numList.add(101);
+		numList.add(102);
+		numList.add(103);
+		numList.add(104);
 
-/* ********************************************************  -:Stream Intermediate Operations:-  ************************************************************ */
+/* **************************************  -:Stream Intermediate Operations:-  ************************************************************ */
 		
 		
 		//  Distinct Operation -->
 		
 		/**
-		List<String> name = new ArrayList<>();
-		name.add("Rahul");
-		name.add("Lorry");
-		name.add("Rahul");
-		name.add("Vijoy");
-		name.add("Rahul");
-		
-		Stream<String> nameStream = name.stream();			//  Converting into Stream 
+		Stream<String> nameStream = nameList.stream();			//  Converting into Stream 
 		Stream<String> nameDistinct = nameStream.distinct();		//  Stream-> Distinct Operation
 		
 		nameDistinct.forEach( (n) -> System.out.print(n + " ")); 	//  O/p: Rahul Lorry Vijoy  
@@ -58,10 +68,10 @@ public class Stream_Operations {
 		//	Filter Operation -->
 		
 		/**
-		Stream<Integer> number = Stream.of(1,2,3,4,5,6,7,8,9);
+		Stream<Integer> number = numList.stream();				//  Converting into Stream 
 		Stream<Integer> evenNumber = number.filter(num -> num%2==0);		//  Stream-> Filter Operation
 		
-		evenNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 2 4 6 8 
+		evenNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 100 102 104  
 		*/
 		
 //____________________________________________________________________________________________________________________________________________________________		
@@ -69,14 +79,7 @@ public class Stream_Operations {
 		//	Sorted Operation -->
 		
 		/**
-		List<String> name = new ArrayList<>();
-		name.add("Rahul");
-		name.add("Lorry");
-		name.add("Rahul");
-		name.add("Vijoy");
-		name.add("Anita");
-		
-		Stream<String> nameStream = name.stream();				//  Converting into Stream 
+		Stream<String> nameStream = nameList.stream();				//  Converting into Stream 
 		Stream<String> nameSorted = nameStream.sorted();			//  Stream-> Sorted Operation
 		
 		nameSorted.forEach( (n) -> System.out.print(n + " ")); 			//  O/p: Anita Lorry Rahul Rahul Vijoy
@@ -88,12 +91,44 @@ public class Stream_Operations {
 		
 		/**
 		Stream<Integer> number = Stream.of(10,40,30,70,80,20,50,70);
-		Stream<Integer> limitNumber = number.limit(5);				//  Stream-> Limit Operation
+		Stream<Integer> limitNumber = number.limit(5);					//  Stream-> Limit Operation
 		
-		limitNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 10 40 30 70 80 
+		limitNumber.forEach( (num) -> System.out.print(num + " "));			//  O/p: 10 40 30 70 80 
+		*/
+
+//____________________________________________________________________________________________________________________________________________________________
+		
+		//	skip Operation -->
+		
+		/**
+		Stream<Integer> number = numList.stream();				//  Converting into Stream
+		Stream<Integer> skipNumber = number.skip(2);				//  Stream-> skip Operation
+		
+		skipNumber.forEach( (num) -> System.out.print(num + " "));		//  O/p: 102 103 104  
 		*/
 		
-/* ********************************************************  -:Stream Terminal Operations:-  **************************************************************** */
+//____________________________________________________________________________________________________________________________________________________________
+	
+		//	allMatch Operation -->
+		
+		/**
+		Stream<String> number = nameList.stream();				//  Converting into Stream
+		boolean res = number.allMatch( n -> n.startsWith("R"));			//  Stream-> allMatch Operation
+		System.out.println(res);						//	O/p:  false
+		*/
+		
+//____________________________________________________________________________________________________________________________________________________________
+		
+		//	anyMatch Operation -->
+		
+		/**
+		Stream<String> number = nameList.stream();			//  Converting into Stream
+		boolean res = number.anyMatch( n -> n.startsWith("R"));		//  Stream-> anyMatch Operation
+		System.out.println(res);					//	O/p:  true
+		*/
+				
+		
+/* *************************************  -:Stream Terminal Operations:-  **************************************************************** */
 		
 		//	Count Operation -->
 		
@@ -118,13 +153,12 @@ public class Stream_Operations {
 		
 		//	forEach Operation -->
 		
-		/*
+		/**
 		Stream<Integer> number = Stream.of(10,40,20,50);
-		number.forEach( (num) -> System.out.print(num + " "));  //  Stream-> forEach Operation,  O/p: 10 40 20 50 
+		number.forEach( (num) -> System.out.print(num + " "));  	//  Stream-> forEach Operation,  O/p: 10 40 20 50 
 		*/
 		
 		
 	}
 }
-
 
