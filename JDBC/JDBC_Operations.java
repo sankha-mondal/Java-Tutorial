@@ -28,7 +28,7 @@ public class JDBC_Operations {
         
         //  	 Create Table:-
         
-        /**
+        
         Statement stmt = con.createStatement();	// step-3 
         
         String sql = "CREATE TABLE REGISTRATION " +
@@ -42,13 +42,13 @@ public class JDBC_Operations {
         System.out.println("Created table in given database...");
         
         con.close();  	// step-5
-        */    
+           
         
 //_____________________________________________________________________________________________________________________________________
         
         //	Insert Query:- 
         
-        /**
+        
         System.out.println("Enter id: ");
         int id = sc.nextInt();
         System.out.println("Enter name: ");
@@ -71,14 +71,14 @@ public class JDBC_Operations {
         
         pstmt.close();
 		con.close(); 
-	*/
+	
         
         
  //_____________________________________________________________________________________________________________________________________       
         
         //   	 Update Query:-
         
-        /**
+        
         System.out.println("Enter id: ");
         int id = sc.nextInt();
         System.out.println("Enter salary: ");
@@ -99,13 +99,13 @@ public class JDBC_Operations {
         
         pstmt.close();
         con.close(); 
-        */
+        
         
 //_____________________________________________________________________________________________________________________________________
        
         //	  Retrieve records:-
         
-        /**
+        
         String q = "select * from employee";
         PreparedStatement pstmt = con.prepareStatement(q);
         
@@ -117,13 +117,13 @@ public class JDBC_Operations {
         pstmt.close();
         con.close();
         rs.close(); 
-        */
+        
   
 //_____________________________________________________________________________________________________________________________________
         
         //   	  Delete Query:-
-        
-        /**
+       
+	    
         System.out.println("Enter id: ");
         int id = sc.nextInt();
         
@@ -141,14 +141,14 @@ public class JDBC_Operations {
         	
         pstmt.close();
         con.close();       
-        */
+        
         
 //_____________________________________________________________________________________________________________________________________
         
         
         //	  Condition Quary:-
         
-        /**
+        
         System.out.println("Enter lRange: ");
         int id1 = sc.nextInt();
         System.out.println("Enter hRange: ");
@@ -168,13 +168,13 @@ public class JDBC_Operations {
         pstmt.close();
         con.close();
         rs.close(); 
-        */
+        
         
 //_____________________________________________________________________________________________________________________________________
         
         //	    Like Quary:-
-        
-        /**
+       
+	    
         System.out.println("Enter LIKE: ");		//  M%, %a, %am%
         String like_Op = sc.next();
         	
@@ -191,13 +191,13 @@ public class JDBC_Operations {
         pstmt.close();
         con.close();
         rs.close();
-        */
+        
       
 //_____________________________________________________________________________________________________________________________________       
         
         //	   Sort Quary:-
         
-        /**
+        
         System.out.println("Enter ORDER BY: ");		//	id or name or salary....
         String ord_by = sc.next();
         	
@@ -214,7 +214,7 @@ public class JDBC_Operations {
         pstmt.close();
         con.close();
         rs.close();
-        */
+        
         
     }
 }
