@@ -24,9 +24,9 @@ public class JDBC_Operations {
         System.out.println("Connected Successfully");
         Scanner sc = new Scanner(System.in);
         
-//________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
         
-        //  Create Table:-
+        //  	 Create Table:-
         
         /**
         Statement stmt = con.createStatement();	// step-3 
@@ -44,7 +44,7 @@ public class JDBC_Operations {
         con.close();  	// step-5
         */    
         
-//________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
         
         //	Insert Query:- 
         
@@ -71,12 +71,12 @@ public class JDBC_Operations {
         
         pstmt.close();
 		con.close(); 
-		*/
+	*/
         
         
- //_______________________________________________________________________________________________       
+ //_____________________________________________________________________________________________________________________________________       
         
-        //   Update Query:-
+        //   	 Update Query:-
         
         /**
         System.out.println("Enter id: ");
@@ -101,15 +101,15 @@ public class JDBC_Operations {
         con.close(); 
         */
         
-//___________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
        
-        //	Retrieve records:-
+        //	  Retrieve records:-
         
         /**
         String q = "select * from employee";
         PreparedStatement pstmt = con.prepareStatement(q);
         
-        ResultSet rs = pstmt.executeQuery();	//  Select clause
+        ResultSet rs = pstmt.executeQuery();	     //  Select clause
         
         while(rs.next()) {
         	System.out.println("Id: "+rs.getInt(1)+" | Name: "+rs.getString(2)+" | Salary: "+rs.getFloat(3));
@@ -119,9 +119,9 @@ public class JDBC_Operations {
         rs.close(); 
         */
   
-//_____________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
         
-        //   Delete Query:-
+        //   	  Delete Query:-
         
         /**
         System.out.println("Enter id: ");
@@ -143,10 +143,10 @@ public class JDBC_Operations {
         con.close();       
         */
         
-//_____________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
         
         
-        //	Condition Quary:-
+        //	  Condition Quary:-
         
         /**
         System.out.println("Enter lRange: ");
@@ -160,7 +160,7 @@ public class JDBC_Operations {
         pstmt.setInt(1, id1);
         pstmt.setInt(2, id2);
         
-        ResultSet rs = pstmt.executeQuery();	//  Select clause
+        ResultSet rs = pstmt.executeQuery();	    	//  Select clause
         
         while(rs.next()) {
         	System.out.println("Id is: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Salary: "+rs.getFloat(3));
@@ -170,9 +170,9 @@ public class JDBC_Operations {
         rs.close(); 
         */
         
-//_____________________________________________________________________________________________________
+//_____________________________________________________________________________________________________________________________________
         
-        //	Like Quary:-
+        //	    Like Quary:-
         
         /**
         System.out.println("Enter LIKE: ");		//  M%, %a, %am%
@@ -183,7 +183,7 @@ public class JDBC_Operations {
         
         pstmt.setString(1, like_Op);
         
-        ResultSet rs = pstmt.executeQuery();	//  Select clause
+        ResultSet rs = pstmt.executeQuery();	       //  Select clause
         
         while(rs.next()) {
         	System.out.println("Id is: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Salary: "+rs.getFloat(3));
@@ -193,9 +193,9 @@ public class JDBC_Operations {
         rs.close();
         */
       
-//_____________________________________________________________________________________________________       
+//_____________________________________________________________________________________________________________________________________       
         
-        //	Sort Quary:-
+        //	   Sort Quary:-
         
         /**
         System.out.println("Enter ORDER BY: ");		//	id or name or salary....
@@ -206,7 +206,7 @@ public class JDBC_Operations {
         
         pstmt.setString(1, ord_by);
         
-        ResultSet rs = pstmt.executeQuery();	//  Select clause
+        ResultSet rs = pstmt.executeQuery();	        //  Select clause
         
         while(rs.next()) {
         	System.out.println("Id is: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Salary: "+rs.getFloat(3));
@@ -218,3 +218,5 @@ public class JDBC_Operations {
         
     }
 }
+
+
