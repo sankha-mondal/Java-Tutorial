@@ -183,7 +183,7 @@ public class JDBC_Operations {
         
         pstmt.setString(1, like_Op);
         
-        ResultSet rs = pstmt.executeQuery();	       //  Select clause
+        ResultSet rs = pstmt.executeQuery();	       //  Select clause (DQL)
         
         while(rs.next()) {
         	System.out.println("Id is: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Salary: "+rs.getFloat(3));
@@ -198,22 +198,17 @@ public class JDBC_Operations {
         //	   Sort Quary:-
         
         
-        System.out.println("Enter ORDER BY: ");		//	id or name or salary....
-        String ord_by = sc.next();
-        	
-        String q = "SELECT * FROM employee ORDER BY ? DESC";
+        String q = "select * from employee order by id desc";
         PreparedStatement pstmt = con.prepareStatement(q);
         
-        pstmt.setString(1, ord_by);
-        
-        ResultSet rs = pstmt.executeQuery();	        //  Select clause
+        ResultSet rs = pstmt.executeQuery();	//  Select clause (DQL)
         
         while(rs.next()) {
-        	System.out.println("Id is: "+rs.getInt(1)+" Name: "+rs.getString(2)+" Salary: "+rs.getFloat(3));
+        	System.out.println("Id: "+ rs.getInt(1) + " | Name: " + rs.getString(2) + " | Salary: " + rs.getFloat(3));
         }
         pstmt.close();
         con.close();
-        rs.close();
+        rs.close(); 
         
         
     }
