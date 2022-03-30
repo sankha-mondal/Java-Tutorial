@@ -1,0 +1,70 @@
+				🧾 MongoDB Operations 📜
+			             ------------------------------------
+
+1) Do this for first time for a user:
+=> In C drive Create a folder name as "data", Under "data" folder create another 
+      folder called "db".
+
+2) To start MongoDB server:
+=> mongod
+
+3) To run the Mongo db Commands:
+=> mongo
+
+4) To show all databases:
+=> show dbs; or show databases;
+
+5) To Create new or switch database:
+=> use <database_name>;
+
+6) To Create a Collection:
+=> db.createCollection("<Collection_name>");
+
+7) To show Collections or Tables:
+=> show collections; or show tables;
+
+8) To Insert data or Insert row:
+=>  db.<>.insert({"name":"Ravi Kumar"});
+       db.<collection_name>.insert({"name":"Gita", "age":22});
+       db.<collection_name>.insert({"name":"Deep", roll:73});
+
+9) To View data:
+=> db.<collection_name>.find();
+
+10) To Insert data using _id.n:
+=>  db.<collection_name>.insert({_id:1,"name":"Gita", "age":22});
+       db.<collection_name>.insert({_id:2,"name":"Mita", "age":23, roll:45});
+       db.<collection_name>.insert({_id:1,"name":"Gita", "age":22});  ----- ❌ Not allowed, _id must be unique.
+
+11) To Retrive data by index:
+=>  db.<collection_name>.find()[0];
+       db.<collection_name>.find()[2];
+       db.<collection_name>.find()[1].name;
+       db.<collection_name>.find()[2].age;
+
+12) To Retrive data by Conditions: 
+=>  db.<collection_name>.find({_id:1});
+       db.<collection_name>.find({city:"kolkata"});
+       db.<collection_name>.find({lname:"Roy"});
+
+13) To Retrive data greater than, less than, less than equal, greater than equal:
+=> db.<collection_name>.find({age:{$gt:24}});
+       db.<collection_name>.find({age:{$lt:18}});
+       db.<collection_name>.find({age:{$lte:20}});
+       db.<collection_name>.find({age:{$gte:20}});
+
+14) To Retrive data using bool concept with table name:
+=> db.<collection_name>.find({},{name:1,_id:0,age:1});
+      db.<collection_name>.find({},{name:1,_id:0});  
+      db.<collection_name>.find({},{name:1,city:1});
+
+15) To Update data:
+=> db.<collection_name>.update({_id:1},{$set:{age:22}});	 <------ Type 1
+      db.<collection_name>.update({city:"Bangalore"},{$set:{location:"Kolkata"}});  <------ Type 2
+      db.<collection_name>.updateMany({city:"Bangalore"},{$set:{location:"Kolkata"}});  <------ Type 3
+      
+16) To Remove data:
+=> db.<collection_name>.remove({_id:1});
+
+17) To Delete Collection: 
+=> db.<collection_name>.drop();
