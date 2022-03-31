@@ -1,3 +1,5 @@
+//  Employee.java is use to create the signature of Table name:-
+
 package com.bean;
 
 import javax.persistence.Column;
