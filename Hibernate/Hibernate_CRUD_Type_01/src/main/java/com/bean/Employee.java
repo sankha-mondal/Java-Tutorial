@@ -6,14 +6,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity							//  Minimum annotation.
-// @Table(name = "employee")    //  only use when class name & table name are different 
+// @Table(name = "employee")    			//  only use when class name & table name are different 
 public class Employee {
-	@Id							//  Minimum annotation.
-//	@Column(name = "id")		//  only use when class attribute & column name are different
+	@Id						//  Minimum annotation.
+//	@Column(name = "id")				//  only use when class attribute & column name are different
 	private int id;
-//	@Column(name = "name")		//  only use when class attribute & column name are different
+//	@Column(name = "name")				//  only use when class attribute & column name are different
 	private String name;
-//	@Column(name = "salary")	//  only use when class attribute & column name are different
+//	@Column(name = "salary")			//  only use when class attribute & column name are different
 	private float salary;
 	
 	public int getId() {
