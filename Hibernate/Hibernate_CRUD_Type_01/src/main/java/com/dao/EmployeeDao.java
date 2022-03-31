@@ -1,4 +1,4 @@
-//   Dao layer is uesd only for Database logic:-
+//   Dao layer is used only for Database logic:-
 
 package com.dao;
 
