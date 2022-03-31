@@ -1,3 +1,5 @@
+//   This class is used for User operations only:-
+
 package com.main;
 
 import java.util.Scanner;
