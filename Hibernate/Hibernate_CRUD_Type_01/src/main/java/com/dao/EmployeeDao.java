@@ -3,7 +3,6 @@
 package com.dao;
 
 import java.util.List;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,22 +14,22 @@ import com.bean.Employee;
 
 public class EmployeeDao { 
 	
-		//	Insert data Operation:-       				[Press 1]
+		//	Insert data Operation:-       					[Press 1]
 		public int storeEmployee(Employee emp) {
 				try {
 				// create session factory
 				Configuration con = new Configuration();		//  Create configuration con
-				con.configure("hibernate.cfg.xml");				//  driver loaded successfully
-				SessionFactory sf = con.buildSessionFactory();	// like a Connection con 
+				con.configure("hibernate.cfg.xml");			//  driver loaded successfully
+				SessionFactory sf = con.buildSessionFactory();		// like a Connection con 
 
 				//create session
-				Session session = sf.openSession();		//   Statement and PreparedStatement both combination
+				Session session = sf.openSession();			//   Statement and PreparedStatement both combination
 				//start a transaction
 				Transaction tran = session.getTransaction();
 				
-				tran.begin();				// start a transaction
-					session.save(emp);		// save the Employee object
-				tran.commit();				// commit transaction
+				tran.begin();						// start a transaction
+					session.save(emp);				// save the Employee object
+				tran.commit();						// commit transaction
 				return 1;
 				}
 				catch (Exception e) {
@@ -44,11 +43,11 @@ public class EmployeeDao {
 		public int updateEmployee(Employee emp) {
 				// create session factory
 				Configuration con = new Configuration();		// Create configuration con
-				con.configure("hibernate.cfg.xml");				// driver loaded successfully
-				SessionFactory sf = con.buildSessionFactory();	// like a Connection con 
+				con.configure("hibernate.cfg.xml");			// driver loaded successfully
+				SessionFactory sf = con.buildSessionFactory();		// like a Connection con 
 
 				//create session
-				Session session = sf.openSession();		//   Statement and PreparedStatement both combination
+				Session session = sf.openSession();			//   Statement and PreparedStatement both combination
 				//start a transaction	
 				Transaction tran = session.getTransaction();
 				
@@ -67,16 +66,16 @@ public class EmployeeDao {
 		}	
 		
 		
-		//	Delete data Operation:-    						 [Press 3]	
+		//	Delete data Operation:-    					 [Press 3]	
 		public int deleteEmployee(int id) {
 			
 				// create session factory		
-				Configuration con = new Configuration();			//  Create configuration con
-				con.configure("hibernate.cfg.xml");					//  driver loaded successfully
+				Configuration con = new Configuration();		//  Create configuration con
+				con.configure("hibernate.cfg.xml");			//  driver loaded successfully
 				SessionFactory sf = con.buildSessionFactory();		// 	like a Connection con 
 				
 				//create session
-				Session session = sf.openSession();					//  Statement and PreparedStatement both combination
+				Session session = sf.openSession();			//  Statement and PreparedStatement both combination
 				//start a transaction		
 				Transaction tran = session.getTransaction();
 					
@@ -118,7 +117,7 @@ public class EmployeeDao {
 
 
 
-		//	Retrieve all data Operation based Upon Query:-   				[Press 5]
+		//	Retrieve all data Operation based Upon Query:-   		[Press 5]
 		public List<Employee> findAllEmployee() {
 				
 				Configuration con = new Configuration();
@@ -128,7 +127,7 @@ public class EmployeeDao {
 				Session session = sf.openSession();
 				
 				//Query qry = session.createQuery("select emp from Employee emp");	
-				//Query qry = session.createQuery("from Employee");						// HQl Query
+				//Query qry = session.createQuery("from Employee");					// HQl Query
 				Query qry = session.createQuery("from Employee emp order by emp.id desc");
 				List<Employee> listOfEmp = qry.list();
 				return listOfEmp;
@@ -136,7 +135,7 @@ public class EmployeeDao {
 
 
 
-		// Retrieve only one property Name for all id:-   				 [Press 6]
+		// Retrieve only one property Name for all id:-   			[Press 6]
 		public List<String> findAllEmployeeName() {
 				
 				Configuration con = new Configuration();
@@ -146,7 +145,7 @@ public class EmployeeDao {
 				Session session = sf.openSession();	
 				
 				// to retrieve name only
-				Query qry = session.createQuery("select emp.name from Employee emp");   // HQl Query
+				Query qry = session.createQuery("select emp.name from Employee emp");   	// HQl Query
 				List<String> listOfEmp = qry.list();
 				return listOfEmp;
 			}	
@@ -170,7 +169,7 @@ public class EmployeeDao {
 		
 
 		
-		//  Join two table:-    								 [Press 9]
+		//  Join two table:-    						[Press 8]
 		public List<Object[]> joinTable() {
 
 			Configuration con = new Configuration();
@@ -180,7 +179,7 @@ public class EmployeeDao {
 			Session session = sf.openSession();
 			
 			//Query qry = session.createQuery("select emp from Employee emp");
-			//Query qry = session.createQuery("from Employee");						// HQl Query
+			//Query qry = session.createQuery("from Employee");					// HQl Query
 			Query qry = session.createSQLQuery("select t.tname,t.tech,s.sname from trainer t inner join student s on t.tid=s.tsid");
 			List<Object[]> listOfEmp = qry.list();
 			return listOfEmp;
