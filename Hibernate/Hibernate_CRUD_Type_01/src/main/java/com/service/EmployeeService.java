@@ -8,7 +8,7 @@ import com.dao.EmployeeDao;
 
 public class EmployeeService {
 	
-	//	Logic for Insert data:-   			[Press-1]
+	//	Logic for Insert data:-   				[Press-1]
 	public String storeEmployee(Employee emp) {
 //		if(emp.getSalary()<12000) 
 //			return "Salary > 12000";
@@ -23,7 +23,7 @@ public class EmployeeService {
 	}
 	
 	
-	//	Logic for Update data:-			[Press-2]
+	//	Logic for Update data:-					[Press-2]
 	public String updateEmployee(Employee emp) {
 		EmployeeDao ed = new EmployeeDao();
 		if(ed.updateEmployee(emp)>0) {
@@ -34,7 +34,7 @@ public class EmployeeService {
 	}
 	
 	
-	//	Logic for Delete data:-						[Press-3]
+	//	Logic for Delete data:-					[Press-3]
 	public String deleteEmployee(int id) {
 		EmployeeDao ed = new EmployeeDao();
 		if(ed.deleteEmployee(id)>0) 
@@ -44,7 +44,7 @@ public class EmployeeService {
 	}
 	
 
-	//	Logic for Retrieve one data by Id:-				[Press-4]
+	//	Logic for Retrieve one data by Id:-			[Press-4]
 	public Employee findEmployeeById(int id) {
 		EmployeeDao ed = new EmployeeDao();
 		return ed.findEmployeeById(id);
@@ -52,7 +52,7 @@ public class EmployeeService {
 	
 	
 
-	//	Logic for Retrieve All data based Upon Quary:-					[Press-5]
+	//	Logic for Retrieve All data based Upon Quary:-		[Press-5]
 	public List<Employee> findAllEmployee() {
 		EmployeeDao ed = new EmployeeDao();
 		return ed.findAllEmployee();
@@ -61,7 +61,7 @@ public class EmployeeService {
 	
 
 	
-	//	Logic for Retrieve All Name:-						[Press-6]
+	//	Logic for Retrieve All Name:-				[Press-6]
 	public List<String> findAllEmployeeName() {
 		EmployeeDao ed = new EmployeeDao();
 		return ed.findAllEmployeeName();
@@ -76,7 +76,7 @@ public class EmployeeService {
 	
 
 	
-	// Logic for Join 2 tables							[Press-9]
+	// Logic for Join 2 tables					[Press-8]
 	public List<Object[]> joinTable() {
 		EmployeeDao ed = new EmployeeDao();
 		return ed.joinTable();
