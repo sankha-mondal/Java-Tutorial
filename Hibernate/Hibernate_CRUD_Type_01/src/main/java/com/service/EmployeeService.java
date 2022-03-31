@@ -10,10 +10,10 @@ public class EmployeeService {
 	
 	//	Logic for Insert data:-   				[Press-1]
 	public String storeEmployee(Employee emp) {
-//		if(emp.getSalary()<12000) 
+//		if(emp.getSalary()<12000) 				
 //			return "Salary > 12000";
 //		else {
-			EmployeeDao ed = new EmployeeDao();
+			EmployeeDao ed = new EmployeeDao();		// necessary logic
 			if(ed.storeEmployee(emp)>0) {
 				return "Record inserted successfully";
 			} else {
