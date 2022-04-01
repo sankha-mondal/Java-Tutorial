@@ -1,0 +1,71 @@
+Q1. We have multiple session factories for one database. State True/False
+Ans: False
+
+Q2. What @Entity does?
+Ans. Used to specify that the class is considered as a table connected with 
+a specific database schema or hibernate managed.
+
+Q3. Annotation is used to auto increment the column data.
+Ans. @GeneratedValue() and providing strategy=GenerationType.IDENTITY
+
+Q4. To Insert data into the table, what basic things do we need to have in our code?
+Ans. Start Session, Start Transaction, save object, commit transaction, close session
+
+Q5. What is finally keyword used for?
+Ans. No matter what happens in try and catch blocks, the code in the finally 
+block will always get executed.
+
+Q6. What will happen if you are trying to fetch a record which is null?
+Ans. We will get output as null.
+
+Q7. How do we read data from a database table?
+Ans. We need to create the hibernate class object and save the returned data from 
+session.get(Hibernate_classname.class, and columns used to fetch data) 
+
+Q8. What is the syntax equivalent of Select * from TableName?
+Ans. 
+
+Q9. Select the correct option/s to print all the data with condition/s.
+Ans. List<ClassName> objectName = Session_Object.createQuery(“ from table name condition/s here”).list();
+
+Q10. What are the various ways to update table data?
+Ans. 
+
+Q11. Identify correct syntax to update only one record in the table.
+Ans.Object obj of associated Hibernate class = session.get(classname.class, id); 
+Obj.variable_name = “new data”; session.update(obj);
+
+Q12. We use the session.delete() method to delete only one record from the table.
+Ans. True
+
+Q13. Identify the correct line of code to delete more than one record from the table.
+Ans. Session.createQuery(delete from Hibernate_class_name where id = 2”).executeUpdate();
+
+Q14. What are the various types of mappings available in Hibernate?
+Ans. One-to-One Mapping, One-to-Many Mapping, Many-to-Many Mapping, Many-to-One Mapping
+
+Q15. What do Eager and Lazy types of fetching do?
+Ans. Eager will fetch all the relevant data from referenced tables even without requesting it and
+Lazy will fetch data only from the table it is called for.
+
+Q16. What are the states in the Entity Life Cycle?
+Ans. New/Transient, Persistent/Managed, Detached and Removed
+
+Q17. Which annotation is used to show the ownership of the relationship in a table.
+Ans. @Join Column
+
+Q18. Which one is a Thread Safe object?
+Ans: SessionFactory
+
+Q19. Which of the following attributes is used to make the association between entities bidirectional.
+Ans. mappedBy
+
+Q20. What @OneToOne does?
+Ans. Specifies the OneToOne association between the two entities.
+
+Q21. Which of the following annotations will be required to set up a One to Many Bidirectional association?
+Ans. @OneToMany  @OneToMany  @ManyToOne
+
+Q22. If the database may not contain the matching row which method will give better result?
+Ans. Session.get()
+
