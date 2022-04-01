@@ -1,4 +1,4 @@
-//   This class is used for User operations only:-
+//   This class is used for User's operations only:-
 
 package com.main;
 
@@ -98,7 +98,7 @@ public class DemoTest {
 			break;
 			
 				
-		case 9:										//  Press 8. For Join 2 tables:
+		case 8:										//  Press 8. For Join 2 tables:
 			System.out.println("Join Table");					
 			es.joinTable().forEach(e1->System.out.println("TName "+e1[0]+"Tech |"+e1[1]+"SName "+e1[2]));
 			break;
