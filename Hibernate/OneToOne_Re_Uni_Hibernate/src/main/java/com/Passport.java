@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class Passport {
 	@Id
-	private int ppid;			//  PK
+	private int ppid;		//  PK
 	private String description;
 	
 	public int getPpid() {
