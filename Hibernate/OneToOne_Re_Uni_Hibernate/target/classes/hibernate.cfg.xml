@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>	<!-- add  cj -->
+  <property name="hibernate.connection.password">Sankha@12</property>						<!-- add password -->
+  <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/newdb</property>	<!-- add port No & database name -->
+  <property name="hibernate.connection.username">root</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>									<!-- need update to create table without already creation -->
+  
+  <mapping class="com.Person"/>				<!-- Person Table will be created -->
+  <mapping class="com.Passport"/>			<!-- passport Table will be created -->
+  
+ </session-factory>
+</hibernate-configuration>
