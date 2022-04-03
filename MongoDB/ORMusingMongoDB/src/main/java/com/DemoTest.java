@@ -1,3 +1,4 @@
+
 package com;
 
 import javax.persistence.EntityManager;
@@ -19,9 +20,9 @@ public class DemoTest {
 		tran.commit();
 		*/
 		
-	EntityManagerFactory emf = Persistence.createEntityManagerFactory("test1"); 	//  means 14 15 | here "test" is persistence-unit name
-	EntityManager manager = emf.createEntityManager();								// 	means 16 17
-	EntityTransaction tran = manager.getTransaction();								// 	means 18
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("test1"); 	//   means 13 14 | here "test" is persistence-unit name
+	EntityManager manager = emf.createEntityManager();				//   means 15 16
+	EntityTransaction tran = manager.getTransaction();				//   means 17
 	
 	//  Insert Operation:- 
 	Employee emp = new Employee();
@@ -29,9 +30,9 @@ public class DemoTest {
 	emp.seteName("Arun");
 	emp.setSalary(25000);
 			
-	tran.begin();						// 	means 19
-			manager.persist(emp);		//	save method
-	tran.commit();						// 	means 20
+	tran.begin();			//  means 18
+			manager.persist(emp);	//   save method
+	tran.commit();			//  means 20
 	
 	System.out.println("Record inserted Successfully");
 	
