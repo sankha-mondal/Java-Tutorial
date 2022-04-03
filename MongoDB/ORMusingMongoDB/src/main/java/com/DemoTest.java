@@ -20,7 +20,7 @@ public class DemoTest {
 		tran.commit();
 		*/
 		
-	EntityManagerFactory emf = Persistence.createEntityManagerFactory("test1"); 	//   means 13 14 | here "test" is persistence-unit name
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("test"); 	//   means 13 14 | here "test" is persistence-unit name
 	EntityManager manager = emf.createEntityManager();				//   means 15 16
 	EntityTransaction tran = manager.getTransaction();				//   means 17
 	
