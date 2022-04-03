@@ -1,16 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
 <hibernate-configuration>
+
     <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>		<!--have to change the cj-->
-        <property name="hibernate.connection.password">Sankha@12</property>				<!--have to change the password-->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost/newdb</property>		<!--have to change the database name-->
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        
-        <mapping class="com.bean.Employee"/>		<!--Put table name-->
-        
+
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>		<!--have to change the cj-->
+        <property name="connection.url">jdbc:mysql://localhost:3306/newdb?useSSL=false&amp;serverTimezone=UTC</property>	<!--have to change the database name-->
+        <property name="connection.username">root</property>
+        <property name="connection.password">Sankha@12</property>		<!--have to change the database name-->											
+
+      <!-- JDBC connection pool settings ... using built-in test pool -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Select our SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Echo the SQL to stdout -->
+        <property name="show_sql">true</property>
+
+		<!-- Set the current session context -->
+		<property name="current_session_context_class">thread</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		 <mapping class="com.bean.Employee"/>			<!-- put java file name, Employee Table will be created -->
+ 
     </session-factory>
+
 </hibernate-configuration>
