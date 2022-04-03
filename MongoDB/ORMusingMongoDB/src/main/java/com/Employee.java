@@ -29,6 +29,17 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	
-	
 }
+
+
+/**
+Steps:-
+
+1> Create pom and add require dependencies.
+2> Add META-INF in src\main\resources folder.
+3> Create Employee.java file
+4> Create DomoTest.java file
+
+*/
+
+
