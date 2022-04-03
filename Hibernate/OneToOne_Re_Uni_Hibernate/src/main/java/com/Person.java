@@ -33,6 +33,5 @@ public class Person {
 	public void setPassport(Passport passport) {
 		this.passport = passport;
 	}
-	
-	
+		
 }
