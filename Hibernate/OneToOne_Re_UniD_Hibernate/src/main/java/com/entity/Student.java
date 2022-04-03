@@ -72,8 +72,6 @@ public class Student {
 	public void setStudentAddress(Address studentAddress) {
 		this.studentAddress = studentAddress;
 	}
-	
-	
 
-	
 }
+

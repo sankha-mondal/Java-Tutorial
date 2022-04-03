@@ -36,7 +36,7 @@ public class DeleteData {
 				session.delete(tempStudent);
 			}
 			
-			session.getTransaction().commit();		// Commit transaction
+			session.getTransaction().commit();			// Commit transaction
 			
 			System.out.println("Delete successfully...");
 
