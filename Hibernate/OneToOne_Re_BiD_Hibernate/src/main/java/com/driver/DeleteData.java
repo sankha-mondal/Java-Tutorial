@@ -12,20 +12,20 @@ public class DeleteData {
 
 	public static void main(String[] args) {
 
-		SessionFactory factory = new Configuration()		// create session factory
+		SessionFactory factory = new Configuration()				// create session factory
 						.configure("hibernate.cfg.xml")
 						.addAnnotatedClass(Student.class)
 						.addAnnotatedClass(Address.class)
 						.buildSessionFactory();
 
-		Session session = factory.getCurrentSession();		// create session
+		Session session = factory.getCurrentSession();				// create session
 		
 
 		try {
 
 			int theAddressId = 2;
 			
-			session.beginTransaction();						// start transaction
+			session.beginTransaction();					// start transaction
 			
 
 			Address tempAddress = session.get(Address.class,theAddressId);
@@ -39,7 +39,7 @@ public class DeleteData {
 			}
 			
 
-			session.getTransaction().commit();		// commit transaction
+			session.getTransaction().commit();				// commit transaction
 
 		} finally {
 			factory.close();
