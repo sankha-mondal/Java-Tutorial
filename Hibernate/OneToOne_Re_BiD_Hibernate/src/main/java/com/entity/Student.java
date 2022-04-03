@@ -34,12 +34,6 @@ public class Student {
 	private Address studentAddress;
 	
 	
-
-	
-	
-	
-	
-	
 	public int getId() {
 		return id;
 	}
