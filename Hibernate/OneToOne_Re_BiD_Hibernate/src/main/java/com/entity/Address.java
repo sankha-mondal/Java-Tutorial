@@ -27,14 +27,6 @@ public class Address {
 	@OneToOne(mappedBy = "studentAddress",cascade = CascadeType.ALL)
 	private Student student;
 	
-
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	public int getId() {
