@@ -11,15 +11,15 @@ public class DemoTest {
 
 		Configuration con = new Configuration();
 		con.configure("hibernate.cfg.xml");
-		SessionFactory sf = con.buildSessionFactory();	// Create SessionFactory object
-		Session sesson = sf.openSession();				// Create Session object
-		Transaction tran = sesson.getTransaction();  	// Create Transaction object
+		SessionFactory sf = con.buildSessionFactory();		// Create SessionFactory object
+		Session sesson = sf.openSession();			// Create Session object
+		Transaction tran = sesson.getTransaction();  		// Create Transaction object
 		
-		Person p = new Person();						//  Create Person object
+		Person p = new Person();				//  Create Person object
 		p.setPid(1);
 		p.setPname("Ravi");
 		
-		Passport pp = new Passport();					//  Create Passport object
+		Passport pp = new Passport();				//  Create Passport object
 		pp.setPpid(1122);
 		pp.setDescription("Indian Passport");
 		
