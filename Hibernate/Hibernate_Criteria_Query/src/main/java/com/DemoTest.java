@@ -63,6 +63,20 @@ public class DemoTest {
 		System.out.println("Number of Employee "+listOfEmp.size());
 		listOfEmp.forEach(e->System.out.println("Name "+e[0]+"| Salary "+e[1]));
 		
+		// Retrieve two property name,salary with condition
+		
+		Criteria cr	= session.createCriteria(Employee.class);
+		Criterion cc = Restrictions.gt("salary", 25000f);
+		Projection p1 = Projections.property("name");
+		Projection p2 = Projections.property("salary");
+		ProjectionList pp = Projections.projectionList();
+		pp.add(p1); 
+		pp.add(p2);
+		cr.add(cc).setProjection(pp);
+		List<Object[]> listOfEmp = cr.list();
+		System.out.println("Number of Employee salary > 25000: "+listOfEmp.size());
+		listOfEmp.forEach(e->System.out.println("Name "+e[0]+" | Salary "+e[1]));
+		
 
 		// Aggregate function using Criteria		
 		
