@@ -13,7 +13,7 @@ public class Person {
 	@Column(name="personName")	//  To rename pname as personName as column name if require
 	private String pname;
 	@OneToOne
-	private Passport passport;	// this Passport is belonging to this Person
+	private Passport passport;	// this Passport is belonging to this Person or Person has Passport
 	
 	public int getPid() {
 		return pid;
