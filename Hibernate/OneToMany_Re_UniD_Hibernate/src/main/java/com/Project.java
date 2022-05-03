@@ -14,7 +14,8 @@ public class Project {
 		private String projectName;
 		@OneToMany
 		@JoinColumn(name="eid", referencedColumnName="pid")
-		private List<Employees> listOfEmp;
+		private List<Employees> listOfEmp;		//  Project has many Employees
+	
 		public int getPid() {
 			return pid;
 		}
