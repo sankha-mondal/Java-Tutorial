@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+</style>
+<body>
+    
+    <p id="demo1">Welcome to JavaScript</p>
+    ----------------------------------------
+    <p class="demo2">Welcome to JavaScript</p>
+    <p class="demo2">Welcome to JavaScript</p>
+    ----------------------------------------
+    <p>pragraph 1</p>
+    <h3>heading 1</h3>
+    <p>pragraph 2</p>
+    <h3>heading 2</h3>
+    <p>pragraph 3</p>
+    ----------------------------------------
+    <h3 class="demo3">heading 1</h3>
+    <div id="div1">
+        <p class="demo3">pragraph 1</p>
+        <h3 class="demo3">heading 2</h3>
+        <p>pragraph 2</p>
+        <h3>heading  3</h3>
+        <p class="demo3">pragraph 3</p>
+    </div>
+    ----------------------------------------
+    <ul>
+        <li id="demo4">list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+    ----------------------------------------
+    <ul id="demo5">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+    ----------------------------------------
+    <ul>
+        <li>list 1</li>
+        <li id="demo6">list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+    ----------------------------------------
+
+    <h1>WElcome to JavaScript event handlign program</h1>
+    FName :<input type="text" name="user" id="u1"/><br/>
+    LName :<input type="text" name="user" id="u2"/><br/>
+    
+    <input type="button" value="read value" onclick="readValue()"/>
+    FullName :<input type="text" id="fullname" readonly/><br/>
+    <div id="out"></div>
+
+   
+    
+
+    <script>
+
+        //  Id selector:-
+        let elm1 = document.getElementById("demo1");
+        elm1.innerHTML = "<h3> This is Id selector. </h3>";
+
+    //-----------------------------------------------------------------------
+
+        //  Class selector:-
+        let elm2 = document.getElementsByClassName("demo2");
+        for(let i=0; i<elm2.length; i++) {
+            elm2[i].innerHTML = "<h3> This is Class selector. </h3>";
+        }
+     
+    //-----------------------------------------------------------------------
+
+        //  Tag selector:-
+        document.getElementsByTagName("p")[4].style.color = "RED";
+        
+
+    //-----------------------------------------------------------------------
+
+        //  Query selector:-
+        let elm4 = document.querySelectorAll("p.demo3");
+        //  elm3.innerHTML = "This is Query selector; //   works for querySelector("p.demo3")
+        for(let j=0; j<elm4.length; j++) {
+            elm4[j].innerHTML = "<h3> This is Query selector. </h3>";
+        }
+
+    //-----------------------------------------------------------------------
+
+        //  Traversing elements:-  [select Parent]
+        let elm5 = document.getElementById("demo4");
+        let prt = elm5.parentElement;
+        prt.innerHTML = "Traversing";
+
+    //-----------------------------------------------------------------------
+        
+        //  Traversing elements:-  [select Child]
+        let elm6 = document.getElementById("demo5");
+        let node1 = elm6.firstElementChild;
+        let node2 = elm6.lastElementChild;
+        let node3 = elm6.children;
+        console.log(node3);
+        
+    //-----------------------------------------------------------------------
+        
+        //  Traversing elements:-  [select sibling-Child]
+        let elm7 = document.getElementById("demo6");
+        let node = elm7.previousElementSibling;
+        console.log(node);
+
+    //-----------------------------------------------------------------------
+
+
+        function readValue() {
+            let h1TagValue  = document.getElementsByTagName("h1")[0].innerHTML;
+            alert(h1TagValue);
+            let fname = document.getElementById("u1").value;
+            let lname = document.getElementById("u2").value;
+            document.getElementById("fullname").value="Welcome "+fname+" "+lname;
+            document.getElementById("u1").value = "";
+            document.getElementById("u2").value = "";
+            document.getElementById("out").innerHTML="Welcome "+fname+" "+lname;
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

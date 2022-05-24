@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object in literal style 
+
+        let emp = {id:100,name:"Raj",age:21};
+
+        document.write("<br/><u> Object Literal style</u> <br/>")
+        document.write("<br/> Id is "+emp.id);
+        document.write("<br/> Name is "+emp.name);
+        document.write("<br/> Age is "+emp.age);
+
+        // we have to convert literal or json object  to string 
+        let empString = JSON.stringify(emp);
+        document.write("<br/><br/><u>String format</u><br/>")
+        document.write("<br/> Id is "+empString.id);
+        document.write("<br/> Name is "+empString.name);
+        document.write("<br/> Age is "+empString.age);
+
+        // we have to convert string to json 
+        let empJson = JSON.parse(empString);
+        document.write("<br/><br/><u> Object Json style <br/>")
+        document.write("<br/> Id is "+empJson.id);
+        document.write("<br/> Name is "+empJson.name);
+        document.write("<br/> Age is "+empJson.age);
+
+
+
+
+
+    /*  JavaScript provided pre-defined object ie JSON
+
+        JSON.stringify();	: object / json data into string. 
+        JSON.parse();		: string to json.           */
+
+
+    </script>
+</body>
+</html>

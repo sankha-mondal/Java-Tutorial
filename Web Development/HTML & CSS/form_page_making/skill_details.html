@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Application Page</title>
+	</head>
+<style>
+body {
+	background-color: gray;
+}
+#change {
+	border-radius: 25px;
+	border: 2px solid red;
+	width: 250px;
+}
+div {
+	border: 2px solid white;
+	display: grid;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+}
+.goto {
+	border: 2px solid white;
+	width: 32%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: darkgray;
+}
+input {
+	border: 2px solid black;
+}
+.sub {
+	width: 32%;
+}
+</style>
+<body>
+
+	<h2>🔴Application Page🔴</h2><br><br>
+
+
+<div class="frm">
+	<form action="exam_details.html" method="get">
+	
+		<h2>🟧🔶🔸🟠&nbsp;&nbsp;<u>Experience Details</u>&nbsp;&nbsp;🔵🔹🔷🟦</h2><br>
+	
+	<label for="experience">Your Work Experience:</label>
+	<input type="number" id="experience" name="Quantity" min="0" max="10" value="0">Year.<br><br>
+
+	
+	<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🟧🔶🔸🟠&nbsp;&nbsp;<u>Skill Details</u>&nbsp;&nbsp;🔵🔹🔷🟦</h2>
+
+	<p>Choose Your Prefered Language: </p>
+	<input type="checkbox" id="c" name="c">
+	<label for="c">C</label><br>
+	<input type="checkbox" id="c++" name="c++">
+	<label for="c++">C++</label><br>
+	<input type="checkbox" id="c#" name="c#">
+	<label for="c#">C#</label><br>
+	<input type="checkbox" id="java" name="java">
+	<label for="java">JAVA</label><br>
+	<input type="checkbox" id="python" name="python">
+	<label for="python">PYTHON</label><br>
+	<input type="checkbox" id="react" name="react">
+	<label for="react">REACT</label><br>
+	<input type="checkbox" id="rubby" name="rubby">
+	<label for="rubby">RUBBY</label><br>
+	<input type="checkbox" id="nodejs" name="nodejs">
+	<label for="nodejs">NODEJS</label><br>
+	<input type="checkbox" id="html" name="html">
+	<label for="html">HTML</label><br>
+	<input type="checkbox" id="css" name="css">
+	<label for="css">CSS</label><br>
+	<input type="checkbox" id="js" name="js">
+	<label for="js">JAVASCRIPT</label><br>
+	<input type="checkbox" id="angular" name="angular">
+	<label for="js">Angular</label>
+	<br><br>
+
+	<label for="youepage">Enter Your URL(Linkedin/Twiter/Facebook/Website):</label>
+	<br><input type="url" id="yourpage" name="yourpage" size="50" 
+	placeholder="https://xyz_abc.linked.com"><br><br>
+
+	<label for="vol">Youe Skill(between 0-10):</label>
+	<input type="range" id="vol" name="vol" min="0" max="10">
+	<br><br>
+
+
+ 	<p class="goto"><a href="education_details.html">Previous</a></p>
+	<input class="sub" type="reset" value="Reset"/>
+	<input class="sub" type="submit" value="Next"/>
+	<br><br>
+
+</form>
+</div>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+

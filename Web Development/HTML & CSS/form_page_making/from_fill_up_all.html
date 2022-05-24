@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<!--<meta http-equiv="refresh" content="1"> -->
+<script>
+function clickFun() {
+	alert("Document Submitted");
+}
+</script>
+<style>
+body {
+	background-color: gray;
+}
+#change {
+	border-radius: 25px;
+	border: 2px solid red;
+	width: 250px;
+}
+div {
+	border: 2px solid white;
+	display: grid;
+	justify-content: center;
+}
+
+</style>
+<body>
+
+	<h2>🔴JavaScript Application Page🔴</h2><br><br>
+
+
+<div class="frm">
+	<form>
+		<h2><u>Personal Details</u></h2>
+	<br>
+	<label for="fname">First Name:</label>
+	<input type="text" name="fname" placeholder="first" required> 
+	<br><br>
+	<label for="mname">Middle Name: </label>
+	<input type="text" name="mname" placeholder="middle" autofocus>
+	<br><br>
+	<label for="lname">Last Name: </label>
+	<input type="text" name="lname" placeholder="last" required>
+	<br><br>
+
+	<label for="fullname">Full Name:</label>
+	<input type="text" id="fullname" name="fullname" size="30" required><br><br>
+	<label for="address">Address:</label>
+	<input type="text" id="address" name="address" size="50" required><br><br>
+
+	<label for="pin">PIN Code:</label>
+	<input type="text" id="pin" name="pin" maxlength="6" size="10" required><br><br>
+
+	<label for="school">School Name: </label>
+	<input type="text" name="school" value="Debipur Station High School" disabled="">
+	<br><br>
+
+	<p>Choose Your Favourire Web-language: </p>
+	<input type="radio" id="html" name="fav_language">
+	<label for="html">HTML</label>
+	<input type="radio" id="css"  name="fav_language">
+	<label for="css">CSS</label>
+	<input type="radio" id="js"  name="fav_language">
+	<label for="js">JAVASCRIPT</label>
+	<br><br>
+
+	<label for="email">Enter e-mail:</label>
+	<input type="email" id="email" name="email" placeholder="xyz.abc@gmail.com">
+	<br><br>
+
+	<p>Choose Your Prefered Language: </p>
+	<input type="checkbox" id="c" name="c">
+	<label for="c">C</label><br>
+	<input type="checkbox" id="c++" name="c++">
+	<label for="c++">C++</label><br>
+	<input type="checkbox" id="c#" name="c#">
+	<label for="c#">C#</label><br>
+	<input type="checkbox" id="java" name="java">
+	<label for="java">JAVA</label><br>
+	<input type="checkbox" id="python" name="python">
+	<label for="python">PYTHON</label>
+	<br><br>
+
+	<label for="fevcolor">Select your favourite color: </label>
+	<input type="color" id="fevcolor" name="fevcolor" value="#fe0095">
+	<br><br>
+
+	<label for="username">Username:</label>
+	<input type="text"id="username" name="username"><br><br>
+
+	<label for="pwd">Password:</label>
+	<input type="password" id="pwd" name="password"><br><br>
+
+	<label for="phone">Phone No:</label>
+	<input type="tel" id="phone" name="phone" placeholder="123-45-678" 
+	pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+	<label for="birthday">Birthday: </label>
+	<input type="date" id="birthday" name="birthday">
+	<br><br>
+
+	<label for="myfile">Drag Your File:</label>
+	<input type="file" id="myfile" name="file">
+	<br><br>
+
+	<label for="Quantity">Your Age: </label>
+	<input type="number" id="Quantity" name="Quantity" min="15" max="30">
+	<br><br>
+
+	<label for="experience">Your Experience:</label>
+	<input type="number" id="experience" name="Quantity" min="0" max="10" step="2" value="2"><br><br>
+
+	<label for="youepage">Enter Your URL:</label>
+	<input type="url" id="youepage" name="youepage"><br><br>
+
+	<label for="vol">Youe Skill(between 0-10):</label>
+	<input type="range" id="vol" name="vol" min="0" max="10">
+	<br><br>
+
+	<label for="week">Prefered Interview Scedule:</label>
+	<input type="week" id="week" name="week"><br><br>
+
+	<label for="joinDate">Start Date:</label>
+ 	<input type="date" id="joinDate" name="joinDate" min="1999-01-02" 
+ 	max="2002-12-31"><br><br>
+ 	<label for="endDate">Finish Date:</label>
+ 	<input type="date" id="endDate" name="endDate" min="2019-01-02"
+ 	max="2021-12-31"><br><br>
+
+ 	<label for="code">Secret Code:</label>
+ 	<input type="text" id="code" name="code" pattern="[A-Za-z]{3}"><br><br>
+
+	<label for="location">Choose Your First Preffered Location:</label>
+	<select id="location" name="location">
+		<option value="bangalore">Bangalore</option>
+		<option value="bhuboneswar">Bhuboneswar</option>
+		<option value="kolkata">Kolkata</option>
+		<option value="pune">Pune</option>
+		<option value="noida">Noida</option>
+		<option value="chennai">Chennai</option>
+		<option value="hydrabad">Hydrabad</option>
+		<option value="mumbai">Mumbai</option>
+	</select><br><br>
+
+	<label for="location">Choose Your Second Preffered Location:</label>
+	<select id="location" name="location" size="3">
+		<option value="bangalore">Bangalore</option>
+		<option value="bhuboneswar">Bhuboneswar</option>
+		<option value="kolkata">Kolkata</option>
+		<option value="pune">Pune</option>
+		<option value="noida">Noida</option>
+		<option value="chennai">Chennai</option>
+		<option value="hydrabad">Hydrabad</option>
+		<option value="mumbai">Mumbai</option>
+	</select><br><br>
+
+	<label for="location">Choose Your Third Preffered Location:</label>
+	<input list="present" name="present">
+		<datalist id="present">
+		<option value="Bangalore">
+		<option value="Bhuboneswar">
+		<option value="Kolkata">
+		<option value="Pune">
+		<option value="Noida">
+		<option value="Chennai">
+		<option value="Hydrabad">
+		<option value="Mumbai">
+	</datalist><br><br>
+ 	
+ 	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 0
+    <input type="range" id="a" name="a" value="50">100 +
+    <input type="number" id="b" name="b" value="50">=
+    <output name="x" for="a b"></output>
+    <br><br>
+
+ 	<label for="message">Tell Us About yourself: </label><br>
+ 	<textarea id="message"name="message" rows="10" cols="30"></textarea>
+ 	<br><br></form>
+
+ 	<label for="gsearch">Google Search:</label>
+ 	<input type="search" id="gsearch" name="gsearch"><br><br>
+
+ 	<input type="submit" name="submit">
+
+
+
+
+
+		<button id="change" type="button" onclick="clickFun()">submit</button>
+</form>
+</div>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+

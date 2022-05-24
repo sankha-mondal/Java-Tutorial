@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Application Page</title>
+	</head>
+<style>
+body {
+	background-color: gray;
+}
+#change {
+	border-radius: 25px;
+	border: 2px solid red;
+	width: 250px;
+}
+div {
+	border: 2px solid white;
+	display: grid;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+}
+.goto {
+	border: 2px solid white;
+	width: 32%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: darkgray;
+}
+input {
+	border: 2px solid black;
+}
+.sub {
+	width: 32%;
+}
+</style>
+<body>
+
+	<h2>🔴Application Page🔴</h2><br><br>
+
+
+<div class="frm">
+	<form action="skill_details.html" method="get">
+
+		<h2>🟧🔶🔸🟠&nbsp;&nbsp;<u>Education Details</u>&nbsp;&nbsp;🔵🔹🔷🟦</h2><br>
+
+	<br>
+	<label for="level">Education Level:</label>
+	<select id="level" name="level">
+		<option value="B.Com">B.Com</option>
+		<option value="B.Tech">B.Tech</option>
+		<option value="M.Tech12th">M.Tech</option>
+		<option value="B.Pharm">B.Pharm</option>
+		<option value="MCA">MCA</option>
+		<option value="10th">10th</option>
+		<option value="12th">12th</option>
+		<option value="Deploma">Deploma</option>
+	</select><br><br>
+
+	<label for="dept">Department Name :</label>
+	<select id="dept" name="dept">
+		<option value="CSE">CSE</option>
+		<option value="CSBS">CSBS</option>
+		<option value="AEIE">AEIE</option>
+		<option value="ECE">ECE</option>
+		<option value="EEE">EEE</option>
+		<option value="IT">IT</option>
+		<option value="EE">EE</option>
+		<option value="ME">ME</option>
+		<option value="CE">CE</option>
+	</select><br><br>
+
+	<label for="Inst">Institution Name: </label>
+	<select id="Inst" name="Inst" size="3">
+		<option value="Govt. College of Engg. & Ceramic Technology">Govt. College of Engg. & Ceramic Technology</option>
+		<option value="Siliguri Institute of Technology">Siliguri Institute of Technology</option>
+		<option value="NSHM College of Management & Technology">NSHM College of Management & Technology</option>
+		<option value="Techno India (Hooghly Campus)">Techno India (Hooghly Campus)</option>
+		<option value="Techno India (Hooghly Campus)">Academy of Technology</option>
+		<option value="Durgapur Institute of Advanced Technology & Management">Durgapur Institute of Advanced Technology & Management</option>
+		<option value="Pailan College of Management & Technology (B.Tech Division ">Pailan College of Management & Technology (B.Tech Division </option>
+		<option value="Pailan College of Management & Technology (MCA Division)">Pailan College of Management & Technology (MCA Division)</option>
+		<option value="Pailan College of Management & Technology">Pailan College of Management & Technology</option>
+		<option value="Mallabhum Institute of Technology">Mallabhum Institute of Technology</option>
+		<option value="Management Institute of Durgapur">Management Institute of Durgapur</option>
+		<option value="Academy of Technology">Academy of Technology</option>
+		<option value="Elitte College Engineering">Elitte College Engineering</option>
+		<option value="Techno India- Hooghly">Techno India- Hooghly</option>
+		<option value="Seacom Engineering College">Seacom Engineering College</option>
+		<option value="Dream Institute of Technology">Dream Institute of Technology</option>
+		<option value="Dr. B. C. Roy Engg. College">Dr. B. C. Roy Engg. College</option>
+		<option value="George College">George College</option>
+		<option value="Institute of Engg. & Management">Institute of Engg. & Management</option>
+		<option value="Kalyani Govt. Engg. College">Kalyani Govt. Engg. College</option>
+		<option value="Institute of Science & Technology">Institute of Science & Technology</option>
+		<option value="Haldia Institute of Technology">Haldia Institute of Technology</option>
+	</select>
+	<br><br>
+
+	<label for="Inst">University Name: </label>
+	<input type="text" name="Inst" value="Maulana Abul Kalam Azad University of Technology" disabled="">
+	<br><br>
+
+	<span><sup>🌟</sup>Education Status:</span>
+	<input type="radio" id="status" name="edu_status" required="">
+	<label for="status">Ongoing</label>
+	<input type="radio" id="status" name="edu_status" required="">
+	<label for="status">Finished</label><br><br>
+	
+	<label for="myfile"><sup>🌟</sup>Post Your Certificates:</label>
+	<input type="file" id="myfile1" name="file1" required=""><br><br>
+
+	<label for="Quantity"><sup>🌟</sup>Your Marks(in percentage): </label>
+	<input type="number" id="Quantity1" name="Quantity1" min="55" max="100" required="">
+	<br><br>
+
+	<label for="joinDate"><sup>🌟</sup>Start Date:</label>
+ 	<input type="date" id="joinDate" name="joinDate" min="2017-07-02" max="2019-12-31" required=""><br><br>
+ 	<label for="endDate"><sup>🌟</sup>Finish Date:</label>
+ 	<input type="date" id="endDate" name="endDate" min="2021-01-02" max="2023-12-31" required=""><br><br>
+
+ 	<hr><br>
+
+	<label for="level">Education Level:</label>
+	<select id="level" name="level">
+		<option value="10th">10th</option>
+		<option value="12th">12th</option>
+		<option value="Deploma">Deploma</option>
+		<option value="ITI">ITI</option>
+	</select><br><br>
+
+	<label for="Inst"><sup>🌟</sup>Institution Name: </label>
+	<input type="text" name="Inst" size="30" required="">
+	<br><br>
+
+	<label for="Board">Education Board Name: </label>
+	<select id="Board" name="Inst" size="2">
+		<option value="CBSC">CBSC</option>
+		<option value="ICSC">ICSC</option>
+		<option value="WBBSE">WBBSE</option>
+		<option value="WBCHSE">WBCHSE</option>
+	</select><br><br>
+
+	<span><sup>🌟</sup>Mathematics Marks Greater Than 70%:</span>
+	<input type="radio" id="m1_status" name="math1_status" value="Yes" required="">Yes
+	<input type="radio" id="m1_status" name="math1_status" value="No" required="">No
+	<input type="radio" id="m1_status" name="math1_status" value="Equal" required="">Equal<br><br>
+
+
+	<label for="level">Type of Education :</label>
+	<select  id="level" name="level">
+		<option value="SCIENCE">SCIENCE</option>
+		<option value="GENERAL">GENERAL</option>
+		<option value="CA">CA</option>
+		<option value="Others">Others</option>
+	</select><br><br>
+	
+	<label for="myfile"><sup>🌟</sup>Post Your Certificates:</label>
+	<input type="file" id="myfile2" name="file2" required=""><br><br>
+
+	<label for="Quantity">Your Marks(in percentage): </label>
+	<input type="number" id="Quantity2" name="Quantity2" min="55" max="100" required="">
+	<br><br>
+
+	<span><sup>🌟</sup>Subject Computer Was There:</span>
+	<input type="radio" id="com_status" name="com_status" value="Yes" required="">Yes
+	<input type="radio" id="com_status" name="com_status" value="No" required="">No<br><br>
+
+
+	<label for="joinDate"><sup>🌟</sup>Start Date:</label>
+ 	<input type="date" id="joinDate" name="joinDate" min="2017-01-02" max="2018-12-31" required=""><br><br>
+ 	<label for="endDate"><sup>🌟</sup>Finish Date:</label>
+ 	<input type="date" id="endDate" name="endDate" min="2018-01-02" max="2019-12-31" required=""><br><br>
+
+ 	<hr><br>
+
+ 	<label for="level">Education Level:</label>
+	<select id="level" name="level">
+		<option value="10th">10th</option>
+		<option value="12th">12th</option>
+		<option value="Deploma">Deploma</option>
+		<option value="ITI">ITI</option>
+	</select><br><br>
+
+	<label for="Inst"><sup>🌟</sup>Institution Name: </label>
+	<input type="text" name="Inst" size="30" required="">
+	<br><br>
+
+	<label for="Board">Education Board Name: </label>
+	<select id="Board" name="Inst" size="2">
+		<option value="CBSC">CBSC</option>
+		<option value="ICSC">ICSC</option>
+		<option value="WBBSE">WBBSE</option>
+		<option value="WBCHSE">WBCHSE</option>
+	</select>
+	<br><br>
+
+	<span><sup>🌟</sup>Mathematics Marks Greater Than 70%:</span>
+	<input type="radio" id="m2_status" name="math2_status" value="Yes" required="">Yes
+	<input type="radio" id="m2_status" name="math2_status" value="No" required="">No
+	<input type="radio" id="m2_status" name="math2_status" value="Equal" required="">Equal<br><br>
+	
+	<label for="myfile"><sup>🌟</sup>Post Your Certificates:</label>
+	<input type="file" id="myfile" name="file" required=""><br><br>
+
+	<label for="level">Type of Education :</label>
+	<select  id="level" name="level">
+		<option value="SCIENCE">SCIENCE</option>
+		<option value="GENERAL">GENERAL</option>
+		<option value="CA">CA</option>
+		<option value="Others">Others</option>
+	</select><br><br>
+
+	<label for="Quantity"><sup>🌟</sup>Your Marks(in percentage): </label>
+	<input type="number" id="Quantity" name="Quantity" min="55" max="100" required="">
+	<br><br>  
+
+	<span><sup>🌟</sup>Subject Computer Was There:</span>
+	<input type="radio" id="comp_status" name="comp_status" value="Yes" required="">Yes
+	<input type="radio" id="comp_status" name="comp_status" value="No" required="">No<br><br>
+
+	<label for="joinDate"><sup>🌟</sup>Start Date:</label>
+ 	<input type="date" id="joinDate" name="joinDate" min="2017-01-02" max="2018-12-31" required=""><br><br>
+ 	<label for="endDate"><sup>🌟</sup>Finish Date:</label>
+ 	<input type="date" id="endDate" name="endDate" min="2018-01-02" max="2019-12-31" required=""><br><br>
+	
+ 	
+
+ 	<p class="goto"><a href="personal_details.html">Previous</a></p>
+	<input class="sub" type="reset" value="Reset"/>
+	<input class="sub" type="submit" value="Next"/>
+	<br><br>
+
+
+
+
+		
+</form>
+</div>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+

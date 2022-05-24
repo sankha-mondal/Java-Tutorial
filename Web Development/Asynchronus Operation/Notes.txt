@@ -1,0 +1,36 @@
+AJAX : (Asynchronous JavaScript and XML) :
+----------------------------------------
+
+         Using XMLHttpRequest. It is a pre-defined object. which help to make the request as Asynchronous. 	
+
+        obj.readyState
+        readyState --> 
+            0 : not initialize yet 
+            1 : ready to send the request to page or resource 
+            2 : request sent. 
+            3 : request processing in servier side.
+            4 : means ready to give the response 
+
+
+Promise : 
+-------
+
+        Promise is a pre-defined object provide by JavaScript which is use to handle 
+        asynchronous event of data. 
+        Promise can be resolved and can be rejected.
+
+        User-defined 
+
+        To load the data form the promise object we have to use then() and catch(). 
+        Then and catch take callback function as a parameter. 
+        Then will call if promise resolved and catch get call if promise rejected.
+
+
+Fetch() :
+-------
+
+        It is pre-defined function which is use to send the request to backend 
+        technologies for get as well as store the data.
+         
+        Fetch method return type is promise object. 
+        Then and catch

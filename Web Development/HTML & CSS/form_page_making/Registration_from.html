@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+	background-color: gray;
+    border: 2px solid white;
+}
+div {
+	display: flex;
+	justify-content: center;
+}
+
+</style>
+<body>
+
+        <!--Enter your code here-->
+             <div><h1> __Registration Form__ </h1></div>   
+                <form  action="display.php" method="post">
+                    <div>
+                        <label for="name"> Name: </label>
+                        <input type="text" id="name" name="name" required="">
+                    </div><br/>
+                    <div>
+                        <label for="userName"> Username: </label>
+                        <input type="text" id="userName" name="userName" required="">
+                    </div><br/>
+                    <div>
+                        <label for="password"> Password: </label>
+                        <input type="password" id="password" name="password" required="">
+                    </div><br/>
+                    <div>
+                        <label for="re-EnterPassword"> Re-enter Password: </label>
+                        <input type="password" id="re-EnterPassword" name="re-EnterPassword" required="">
+                    </div><br/>
+                    <div>
+                        <label for="address"> Address: </label>
+                        <textarea id="address" name="address" required=""></textarea>
+                    </div><br/>
+                    <div>
+                        <label for="gender">Gender: </label>
+                        <input type="radio" id="gender" name="gender" value="Male" required=""> Male 
+                        <input type="radio" id="gender" name="gender" value="Female" required=""> Female
+                    </div><br/>
+                    <div>
+                        <label for="districtName"> District Name: </label>
+                        <select id="districtName" name="districtName">
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="New York">New York</option>
+                            <option value="Jersey">Jersey</option>
+                        </select>
+                    </div><br/>
+                    <div>
+                        <label for="events[]"> Events:  </label>
+                        <input type="checkbox" name="events[]" id="events[]" value="Wedding">Wedding
+                        <input type="checkbox" name="events[]" id="events[]" value="Corporate">Corporate
+                        <input type="checkbox" name="events[]" id="events[]" value="Social">Social
+                    </div><br/>
+                    <div>
+                        <label for="register"></label>
+                        <input type="submit" id="register" name="register" value="Register">
+                    </div><br/>
+                </form>
+</body>
+</html>

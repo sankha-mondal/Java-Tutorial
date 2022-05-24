@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+       text-align: center;
+   }
+</style>
+<body>
+    <div>
+    <script>
+        var str = "   JavaScript is is a Great Language.    ";
+        var str1 = "for developer." 
+
+        //  length()
+        document.write(str.length);
+
+        //  toLowerCase()
+        document.write("<br>"+str.toLowerCase());
+
+        //  toUpperCase()
+        document.write("<br>"+str.toUpperCase());
+
+        //  includes()
+        document.write("<br>"+str.includes("Great"));
+
+        //  startsWith()
+        document.write("<br>"+str.startsWith(" "));
+
+        //  endsWith()
+        document.write("<br>"+str.endsWith("Language"));
+
+        //  search()
+        document.write("<br>"+str.search("Language"));
+
+        //  match()
+        document.write("<br>"+str.match(/is/g));
+
+        //  indexOf()
+        document.write("<br>"+str.indexOf("is"));
+
+        //  lastIndexOf()
+        document.write("<br>"+str.lastIndexOf("is"));
+
+        //  replace()
+        document.write("<br>"+str.replace("is", "are"));
+
+        //  trim()
+        document.write("<br>"+str.trim());
+
+        //  charAt()
+        document.write("<br>"+str.charAt(12));
+
+        //  charCodeAt()
+        document.write("<br>"+str.charCodeAt(12));
+
+        //  fromCharCode()
+        document.write("<br>"+String.fromCharCode(65));
+
+        //  concat()
+        document.write("<br>"+str.concat(str1));
+
+        //  split()
+        document.write("<br>"+str.split(" "));
+
+        //  repeat()
+        document.write("<br>"+str.repeat(2));
+
+        //  slice()
+        document.write("<br>"+str.slice(6,15));     //  1st- Staring index, 2nd- Upto that index
+
+        //  substr()
+        document.write("<br>"+str.substr(6,15));    //  1st- Staring index, 2nd- No of character
+
+        //  substring()
+        document.write("<br>"+str.substring(6,15));    //  1st- Staring index, 2nd- Upto that index-1
+
+        //  toString()
+        document.write("<br>"+str.toString());
+
+        //  valueOf()
+        document.write("<br>"+str.valueOf());
+
+    </script>
+    </div>
+</body>
+</html>

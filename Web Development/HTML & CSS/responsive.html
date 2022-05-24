@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="refresh" content="3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+body {
+  background-color: gray;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.flex-container > .one > div {
+  background-color: #f1f1f1;
+  border:2px solid black ;
+}
+.flex-container > .two > div {
+  background-color: #f1f1f1;
+  text-align: center;
+  border:2px solid black ;
+}
+img {
+  width: 1000px;
+}
+
+/* Phone */
+@media only screen and (max-width:599px) {
+  body {
+    background-color: #f05656;
+  }
+  img {
+  width: 580px;
+  } 
+.flex-container {
+  display: block;
+  }
+}
+@media only screen and (min-width:600px) and (max-width:809px) {
+  body {
+    background-color: #d40f95;
+  }
+  img {
+  width: 790px;
+  }
+ .flex-container {
+  display: block;
+  } 
+}
+@media only screen and (min-width:810px) and (max-width:1201px) {
+  body {
+    background-color: #0ced1b;
+  }
+  img {
+  width: 400px;
+  } 
+}
+@media only screen and (min-width:1202px) and (max-width:1613px) {
+  body {
+    background-color: yellow;
+  }
+  img {
+  width: 600px;
+  } 
+}
+@media only screen and (min-width:1614px) and (max-width:2010px) {
+  body {
+    background-color: tan;
+  }
+  img {
+  width: 800px;
+  } 
+}
+/* Desktop */
+@media only screen and (min-width:2011px) {
+  body {
+    background-color: pink;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-direction Property</h1>
+
+<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+<div class="flex-container">
+
+  <div class="one"><img src="1.png"></div>
+  <div class="two"><img src="2.png"></div>
+
+
+</div>
+
+</body>
+</html>

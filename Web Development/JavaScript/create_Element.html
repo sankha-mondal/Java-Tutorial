@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        text-align: center;
+    }
+</style>
+<body>
+    <div>
+        Name :<input type="text" id="userName"/><br/>
+        Age :<input type="text" id="userAge"/><br/>    
+        <input type="button" value="Add Name" onclick="domOperation()"/>
+        <br/>
+        <div id="menu"></div>
+    </div>
+    <script>
+        function domOperation() {
+    let userName = document.getElementById("userName").value;
+    let userAge = document.getElementById("userAge").value;
+    let ptag = document.createElement("p");
+    let ptagContent = document.createTextNode("Name is "+userName+" Age is "+userAge);
+    
+    ptag.appendChild(ptagContent);      // content added in p tag 
+    
+    //ptag.setAttribute("class","myPTagClass")
+
+    document.getElementById("menu").appendChild(ptag);  // added p tag in div tag 
+    document.getElementById("userName").value="";
+    document.getElementById("userAge").value="";
+}
+    </script>
+</body>
+</html>

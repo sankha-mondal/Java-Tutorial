@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    FirstName: <input type="text" name="user" id="u1"><br>
+    LastName: <input type="text" name="user" id="u2"><br>
+    <button onclick="get()">Add Me</button>
+    Fullname: <input type="text" id="fn"><br>
+   
+
+    <script>
+        function get() {
+            let fn = document.getElementById("u1").value;
+            let ln = document.getElementById("u2").value;
+
+            document.getElementById("fn").value = `Welcome ${fn} ${ln}`;
+        }
+    </script>
+
+
+
+</body>
+</html>

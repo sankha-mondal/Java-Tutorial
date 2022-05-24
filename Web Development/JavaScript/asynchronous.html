@@ -1,0 +1,71 @@
+<!-- Basic asynchronous methods 
+    Window object provided three methods 
+    i) setTime()
+    ii) setInterval()
+    iii) clearInterval(); -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i = 0;
+        // Synchronous statement exection 
+
+        // document.write("<br/> 1st Statement");
+        // document.write("<br/> 2nd Statement");
+        // document.write("<br/> 3rd Statement");
+
+
+        // Asynchronous statement exection
+
+        document.write("<br/> 1st Statement");
+        
+        setTimeout(()=> {
+        //  document.write("<br/> 2nd Statement");                                //  page will refresh after 3 sec, visible 2nd only
+          document.getElementById("obj2").innerHTML="<br/> 2nd Statement";        //  page will not refresh after 3 sec, visible all
+        },3000);
+
+        document.write("<br/> 3rd Statement");
+
+        var obj = setInterval(()=> {
+            document.getElementById("obj4").innerHTML="<br/> 4th statement "+i;
+            var dd = new Date();
+
+            if(i%2==0) {
+                //document.getElementsByTagName("body")[0].bgColor="RED";
+                document.getElementById("obj5").style.color = "red";
+                document.getElementById("obj5").style.fontSize = "20px";
+                document.getElementById("dd").innerHTML=dd.getHours()+":"+dd.getMinutes()+":"+dd.getSeconds();
+            } else {
+                //document.getElementsByTagName("body")[0].bgColor="GREEN";
+                document.getElementById("obj5").style.color = "tan";
+                document.getElementById("obj5").style.fontSize = "30px";
+                document.getElementById("dd").innerHTML=dd.getHours()+":"+dd.getMinutes()+":"+dd.getSeconds();
+            }
+
+            i++;
+        },1000);
+
+        function stop() {
+            clearInterval(obj);
+        }
+        
+
+    </script>
+
+</head>
+<body>
+
+    <div id="obj2"></div>
+    <div id="obj4"></div>
+    <div id="obj5">⭐This is JavaScript Asynchronous Program.</div>
+    <div id="dd" align="right"></div>
+    <input type="button" value="click here" onclick="stop()"/>
+
+  
+</body>
+</html>

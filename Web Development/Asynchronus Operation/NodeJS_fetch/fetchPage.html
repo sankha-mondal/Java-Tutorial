@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fetchPage.js"></script>
+</head>
+<style>
+    div {
+	border: 2px solid white;
+	display: flex;
+	justify-content: center;
+    /* text-align: center; */	
+}
+body {
+    background-color: olive;
+}
+</style>
+<body>
+    <div>
+        <form action="">
+            <input type="button" onclick="get_fetch1()" value="Console"><br/>
+            <input type="button" onclick="get_fetch2()" value="Browser1"><br/>
+            <input type="button" onclick="get_fetch3()" value="Browser2"><br/>
+            
+
+        
+                <label>Id:</label>
+                <input type="text" id="id"><br/>
+                <label>Name:</label>
+                <input type="text" id="name"><br/>
+                <label>Age:</label>
+                <input type="text" id="age"><br/>
+                <input type="button" value="Add Employee" onclick="addData()"><br/>
+
+            <div id="data" ></div>
+        </form>
+    </div>
+
+</body>
+</html>

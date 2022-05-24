@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Application Page</title>
+	</head>
+
+<style>
+body {
+	background-color: gray;
+}
+#change {
+	border-radius: 25px;
+	border: 2px solid red;
+	width: 250px;
+}
+div {
+	border: 2px solid white;
+	/* display: flex;
+	justify-content: center; */
+	text-align: center;
+}
+a {
+	text-decoration: none;
+}
+.goto {
+	border: 2px solid white;
+	width: 15%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	background-color: darkgray;
+}
+input, #address {
+	border: 2px solid black;
+}
+.sub {
+	width: 15%;
+}
+</style>
+<body>
+
+<h2>🔴Application Page🔴</h2><br><br>
+
+
+<div class="frm">
+	<form action="education_details.html" method="get">
+
+		<h2>🟧🔶🔸🟠&nbsp;&nbsp;<u>Personal Details</u>&nbsp;&nbsp;🔵🔹🔷🟦</h2><br>
+	
+	<label for="fname"><sup>🌟</sup>First Name:</label>
+	<input type="text" name="fname" placeholder="Chandrasekhara" required=""> 
+	<br><br>
+	<label for="mname">Middle Name: </label>
+	<input type="text" name="mname" placeholder="Venkata" autofocus>
+	<br><br>
+	<label for="lname"><sup>🌟</sup>Last Name: </label>
+	<input type="text" name="lname" placeholder="Raman" required="">
+	<br><br>
+
+	<label for="fullname"><sup>🌟</sup>Full Name:</label>
+	<input type="text" id="fullname" name="fullname" size="30" 
+	placeholder="Enter your name" required=""><br><br>
+
+	<span><sup>🌟</sup>Gender :</span>
+	<input type="radio" id="gen" name="gen_status" value="male" required="">Male
+	<input type="radio" id="gen" name="gen_status" value="female" required="">Female<br><br>
+
+	<label for="address"><sup>🌟</sup>Address: </label>
+    <textarea id="address" name="address" required=""></textarea><br><br>
+
+	<label for="pin"><sup>🌟</sup>PIN Code:</label>
+	<input type="text" id="pin" name="pin" maxlength="6" size="10" 
+	 placeholder="12-34-56" required=""><br><br>
+
+	<label for="email"><sup>🌟</sup>Enter e-mail:</label>
+	<input style="width: 20%;" type="email" name="email" placeholder="abc.xyz@hotmail.com" required=""/>
+	<br><br>
+
+	<label for="fevcolor">Select your favourite color: </label>
+	<input type="color" id="fevcolor" name="fevcolor" value="#fe0095">
+	<br><br>
+
+	<label for="phone"><sup>🌟</sup>Phone No:</label>
+	<input type="tel" id="phone" name="phone" placeholder="123-45-678" required=""> 
+	<br><br>
+
+	<label for="Quantity"><sup>🌟</sup>Your Age: </label>
+	<input type="number" id="Quantity" name="Quantity" min="15" max="30" required="">
+	<br><br><br>
+
+	<div class="goto"><a href="username_password.html">Previous</a></div>
+	<input class="sub" type="reset" value="Reset"/>
+	<input class="sub" type="submit" value="Next"/>
+	<br><br>
+	
+</form>
+</div>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+
+
