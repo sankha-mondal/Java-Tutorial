@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+<!-- Used for Constructor based DI -->
+
+<bean class="com.Employee" id="obj1" scope="singleton"></bean>
+
+<bean class="com.Employee" id="obj2" scope="prototype"></bean>
+
+<bean class="com.Employee" id="obj3">
+	<constructor-arg value="1"></constructor-arg>
+	<constructor-arg value="Ravi"></constructor-arg>
+	<constructor-arg value="12000"></constructor-arg>
+</bean>
+
+<!-- Used for Setter based DI -->
+
+<bean class="com.Employee" id="obj4">
+	<property name="id" value="2"></property>
+	<property name="name" value="Ramesh"></property>
+	<property name="salary" value="15000"></property>
+</bean>
+
+<!-- Working with Complex datatype -->
+
+<bean class="com.Employee" id="obj5">
+	<property name="id" value="3"></property>
+	<property name="name" value="Kartik"></property>
+	<property name="salary" value="17000"></property>
+	<property name="add" ref="obj_add1"></property>
+</bean>
+
+<bean class="com.Address" id="obj_add1">
+	<property name="city" value="Bangalore"></property>
+	<property name="state" value="Karnataka"></property>
+</bean>
+
+<!-- Working with Complex datatype - AutoWire - byType -->
+
+<!-- <bean class="com.Employee" id="obj6" autowire="byType">
+	<property name="id" value="4"></property>
+	<property name="name" value="Gansa"></property>
+	<property name="salary" value="21000"></property>
+	  <property name="add" ref="obj_add2"></property>  Don't use this line.
+</bean> -->
+
+<!-- Working with Complex datatype - AutoWire - byName -->
+
+<bean class="com.Employee" id="obj6" autowire="byName">
+	<property name="id" value="4"></property>
+	<property name="name" value="Gansa"></property>
+	<property name="salary" value="21000"></property>
+	<!-- <property name="add" ref="obj_add2"></property>  -->
+</bean>
+
+<bean class="com.Address" id="add1">			<!-- XML id name and complex property name must be matched to identify from many. -->
+	<property name="city" value="Mumbai"></property>
+	<property name="state" value="Maharastha"></property>
+</bean>
+
+<bean class="com.Address" id="add">				<!-- XML id name and complex property name must be matched to identify from many. -->
+	<property name="city" value="Kolkata"></property>
+	<property name="state" value="West Bengal"></property>
+</bean>
+</beans>
