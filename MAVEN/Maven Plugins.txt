@@ -1,5 +1,5 @@
 Java version 
-
+-----------------
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -7,7 +7,7 @@ Java version
   </properties>
 
 mongo Db connectivity dependency 
-
+------------------------------------------
 <dependency>
     <groupId>org.hibernate.ogm</groupId>
     <artifactId>hibernate-ogm-mongodb</artifactId>
@@ -26,19 +26,17 @@ mongo Db connectivity dependency
 </dependency>
 
 
-
-
-
 My SQL Connector 
-
+----------------------
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>8.0.16</version>
 </dependency>
 
-Hibernate Dependency 
 
+Hibernate Dependency 
+----------------------------
 <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
@@ -47,7 +45,7 @@ Hibernate Dependency
 
 
 JSTL dependencies 
-
+--------------------------
 <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 <dependency>
     <groupId>javax.servlet</groupId>
@@ -57,7 +55,7 @@ JSTL dependencies
 
 
 persistence.xml 
-
+--------------------
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0"
              xmlns="http://java.sun.com/xml/ns/persistence" 
@@ -77,7 +75,7 @@ persistence.xml
 
 
 Hibernate with OGM dependencies 
-
+--------------------------------------------
 <dependency>
     <groupId>org.hibernate.ogm</groupId>
     <artifactId>hibernate-ogm-mongodb</artifactId>
@@ -99,23 +97,25 @@ Hibernate with OGM dependencies
 
 
 Spring core 
-
+--------------
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
     <version>5.2.12.RELEASE</version>
 </dependency>
 
-Spring context 
 
+Spring context 
+------------------
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
     <version>5.2.12.RELEASE</version>
 </dependency>
 
-Spring JDBC 
 
+Spring JDBC 
+---------------
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -123,8 +123,9 @@ Spring JDBC
     <version>5.2.12.RELEASE</version>
 </dependency>
 
-spring mvc 
 
+spring mvc 
+-------------
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -132,16 +133,15 @@ spring mvc
     <version>5.2.12.RELEASE</version>
 </dependency>
 
-spring orm (spring with hibernate or jpa)
 
+spring orm (spring with hibernate or jpa)
+-----------------------------------------------
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
     <version>5.2.12.RELEASE</version>
 </dependency>
-
-
 
 
 <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="ds" scope="singleton">
@@ -153,7 +153,7 @@ spring orm (spring with hibernate or jpa)
 
 
 web.xml for DispatcherServlet 
-
+------------------------------------
 <servlet>
   	<servlet-name>dispatcher</servlet-name>
   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -163,8 +163,9 @@ web.xml for DispatcherServlet
   		<url-pattern>*.spring</url-pattern>
   </servlet-mapping>
 
-Two dependenices for convert java object to json or xml 
 
+Two dependenices for convert java object to json or xml 
+-------------------------------------------------------------------
 <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>
     <artifactId>jackson-databind</artifactId>
@@ -180,23 +181,25 @@ Two dependenices for convert java object to json or xml
 
 
 Spring boot basic starter (non web starter)
-
+--------------------------------------------------
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter</artifactId>
     <version>2.5.2</version>
 </dependency>
 
-Parent starter 
 
+Parent starter 
+-----------------
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.6.2</version>
   </parent>
 
-Spring boot web starter 
 
+Spring boot web starter 
+----------------------------
 
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
 <dependency>
@@ -205,17 +208,17 @@ Spring boot web starter
 
 </dependency>
 
+
 spring boot jdbc starter 
-
-
-
+----------------------------
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-jdbc</artifactId>
 </dependency>
 
-spring boot jpa starter 
 
+spring boot jpa starter 
+---------------------------
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -224,7 +227,7 @@ spring boot jpa starter
 
 
 spring boot in jsp starter 
-
+-----------------------------
 <dependency>
     <groupId>org.apache.tomcat.embed</groupId>
     <artifactId>tomcat-embed-jasper</artifactId>
@@ -235,15 +238,17 @@ spring boot in jsp starter
     <artifactId>spring-boot-starter-tomcat</artifactId>
 </dependency>
 
-jstl starter 
 
+jstl starter 
+-------------
 <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>jstl</artifactId>
 </dependency>
 
-view resolver 
 
+view resolver 
+----------------
 spring.mvc.view.prefix: /WEB-INF/jsp/
 spring.mvc.view.suffix: .jsp
 
@@ -256,8 +261,6 @@ public String sayHello() {
 
 Or 
 
-
-
 database details in application.properties file 
 
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
@@ -267,7 +270,7 @@ spring.datasource.password=root@123
 
 
 swagger dependency 
-
+--------------------------
 this dependency provide the api 
 <dependency>
     <groupId>io.springfox</groupId>
@@ -277,7 +280,7 @@ this dependency provide the api
 
 
 this dependency provide the ui  
-	
+------------------------------------	
 <dependency>
     <groupId>io.springfox</groupId>
     <artifactId>springfox-swagger-ui</artifactId>
@@ -286,7 +289,7 @@ this dependency provide the ui
 
 
 Eureka Server application.properties 
-
+-------------------------------------------
 server.port=8761
 eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
@@ -294,7 +297,7 @@ eureka.client.fetch-registry=false
 
 
 junit 5 dependencies 
-
+------------------------
 <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 <dependency>
     <groupId>org.junit.jupiter</groupId>
@@ -331,7 +334,7 @@ junit 5 dependencies
 
 
 spring boot testing starter 
-
+-------------------------------
 <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
 <dependency>
     <groupId>org.springframework.boot</groupId>
