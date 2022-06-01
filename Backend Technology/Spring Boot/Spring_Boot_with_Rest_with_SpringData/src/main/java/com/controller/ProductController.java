@@ -18,6 +18,7 @@ import com.service.ProductService;
 
 @RestController
 @RequestMapping("products")	// http://localhost:8080/products/
+@CrossOrigin			// Enable cors policies 
 public class ProductController {
 
 	@Autowired
