@@ -39,6 +39,7 @@ according to AOP.
 	
 
 	AOP Terminology 
+	--------------------
 	1. Aspect : An aspect is a module that encapsulated adivce and pointcuts and provide cross cutting for our application. 
 	2. Point cut : A point cut is an expression language that selects one or more join points where advice will execute.
 	3. joint point : A join point is a point in the application were we can apply an AOP advice. 
