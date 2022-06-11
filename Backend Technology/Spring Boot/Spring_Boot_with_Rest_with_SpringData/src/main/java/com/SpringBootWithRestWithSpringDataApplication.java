@@ -17,4 +17,6 @@ public class SpringBootWithRestWithSpringDataApplication {
 	}
 }
 
+//  Run on localhost:8761  {swagger}
+
 
