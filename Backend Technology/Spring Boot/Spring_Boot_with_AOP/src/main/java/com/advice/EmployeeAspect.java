@@ -18,8 +18,18 @@ public class EmployeeAspect {
 	}
 	
 	@Before("myPointCut()")
-	public void beforeAdvice() {
-		System.out.println("This code will execute before business method ");
+	public void beforeAdvice1() {
+		System.out.println("This code will execute before business method 1");
+	}
+	
+	@Before("myPointCut()")
+	public void beforeAdvice2() {
+		System.out.println("This code will execute before business method 2");
+	}
+	
+	@Before("myPointCut()")
+	public void beforeAdvice3() {
+		System.out.println("This code will execute before business method 3");
 	}
 	
 	@After("myPointCut()")
@@ -50,5 +60,16 @@ public class EmployeeAspect {
 	}
 
 }
+
+	/**  O/p:
+	    	This code execute before with Around annotation
+		This code will execute before business method 1
+		This code will execute before business method 2
+		This code will execute before business method 3
+		This code will execute after business method 3
+		This code will execute after business method 2
+		This code will execute after business method 1
+		This code execute after with Around annotation
+	 */
 
 
