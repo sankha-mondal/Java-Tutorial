@@ -1,0 +1,38 @@
+Node JS : Node JS is run time environment for JavaScript program or library or Framework. 
+Before Node JS JavaScript is known as Client side scripting language. But after node-JS 
+JavaScript is known as client side as well as server side scripting language. 
+Using Node Js we can create server programming language like in Java Servlet, 
+JSP or Spring framework. 
+
+S1>  node --version 
+S2>  npm  --version 		:node package manager : 
+node js provide lot of pre-defined module. 
+Json-server  it is a type of external module which help run static json file as a server. 
+Which help to read and write json data through fetch function. 
+
+S3>  npm install -g json-server	 or 	npm install json-server
+
+S4> create the file employee.json 
+      {
+	"employee": [
+		{"id":1,"name":"Ravi","age":21},
+		{"id":2,"name":"Ramesh","age":25},
+		{"id":3,"name":"Rajesh","age":28}
+	]	
+      }
+
+S5> Open the command prompt in that location in place of file present 
+        > json-server employee.json
+		You will get:-
+		\{^_^}/ hi!
+		Loading employees.json
+		Done
+
+		Resources
+		http://localhost:3000/employees
+
+		Home
+		http://localhost:3000
+
+		Type s + enter at any time to create a snapshot of the database
+		GET /employees 200 38.390 ms - 174
