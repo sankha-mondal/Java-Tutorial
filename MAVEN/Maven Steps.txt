@@ -1,0 +1,22 @@
+1) mvn --version
+
+2) mvn archetype:generate
+
+	a) groudId: com.myCompany
+	b) artifactId: TestProject1
+	c) version 1.0-SNAPSHOT: enter
+	d) package com.myCompany: enter
+
+3) cd TestProject1
+
+4) mvn compile
+
+5) mvn clean
+
+6) mvn package == clear+compile+package
+
+7) mvn clean package
+
+8) cd target
+
+9) java -cp test1-1.0-SNAPSHOT.jar com.myCompany.App
