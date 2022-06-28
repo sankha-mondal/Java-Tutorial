@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@include file="signIn.jsp" %>
+
+     <%@include file="signIn.jsp" %>  <!-- automatically navigate to signIn.jsp page -->
+
 </body>
 </html>
