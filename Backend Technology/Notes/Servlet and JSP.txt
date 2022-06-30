@@ -80,9 +80,7 @@ Limitation of JSP :
 If we use Servlet, Inside a Servlet doGet or doPost if we use business logic or databse logic using JDBC or Hiberante that code become local to that servlet. 
 
 
-
-
-
+____________________________________________________________________________________________________________________________________________
 
 
 MVC : Model View Controller 
