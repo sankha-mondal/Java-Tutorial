@@ -1,0 +1,109 @@
+
+					Java 
+
+J2SE					 J2EE					      J2ME
+
+JavaSE				                JavaEE					    JavaME
+
+JSE					JEE					       JME 
+
+Standard edition			       Enterprise Edition 			               Micro Edition  
+
+Core Java 
+
+JEE :		Servlet , JSP (Java Server Pages ) and EJB (Enterprise Java Bean)
+
+Application point of view 
+Server mainly divided into two types:
+-------------------------------------------- 
+	1.	Web Server 			:	Tomcat (Apache company)
+	2.	Application Server or app server 	:	Web Logic, JBoss, Glashfish etc. 
+
+Inside Servlet, JSP and EJB doesn’t contains main method. Inside a Server it may be web server or application which contains container. Container is a part of server which is also known as engine. Container is responsible to execute servlet, jsp and ejb program means it load the servlet, jsp and ejb program, create object, call the life cycle method and destroy the objects. 
+If Server is a type of web server which container web container. Web container is responsible to execute servlet and jsp program. Inside a tomcat we can execute servlet and jsp program. 
+If server is a type o application server which contains different types of container ie web container, ejb container or jms container etc. 
+In Application we can run servlet, jsp and ejb program. 
+Application server provide different types of service lie Thread management, resource management, security and connection pooling etc. 
+
+Servlet : Servlet is normal Java Program which help to create dynamic web page on server side. 
+Servlet API :
+Servlet interface : 5 method : init, service, destroy,getServletInfo, getServletConfig
+
+GenericServlet : it is a type of abstract class which internally implements Servlet interface and provided body for all method expect service method. 
+
+HttpServlet :HttpServlet is a pre-defined abstract class which internally extends GenericServlet and provided body for service method as well as provide some extra method in the form of doXXX like doGet, doPost, doPut and doDelete etc. 
+
+http://localhost:8080/SimpleServletApp/
+
+RequestDispatcher : it is an interface which provided set of methods which help to navigate from one page to another page base some conditions. 
+
+_________________________________________________________________________________________________________________________________
+
+
+JSP ( Java Server Pages) : JSP is a tag based interpreter scripting language which help to create dynamic web page on server side.
+-----------------------------
+ 
+Limitation of Servlet :
+-------------------------
+Servlet is normal Java program if we do any changes in servlet program we have to re-compile and re-deploy the application on server. 
+If we want to write any html code inside a servlet we have to write in pw.println(“html code”);
+If we want to display any simple message through servlet it very complex. Because we have to make normal class and that class must be extends or implements type of servlet and we have to override life cycle method or doXXX method and then we have to create the PrintWriter class object and we have to provide the details about servlet in web.xml file. 
+
+
+
+
+JSP tags:
+---------- 
+	1.  Jsp scripting tags 
+		a.   Jspscriptlet tag 
+		       <%
+		       Java coding means the code which we write inside doGet or doPostmetbod. 
+		      %>
+		b.   Declarative tag 
+		      <%! Int a, b,sum;%>
+		c.   <%= expression %>
+
+2.	Jsp implicit object
+		a.  out : out is type of implicit object it is equal to PrintWriter class reference.  
+		b.  request : request is type of implicit object it is equal to HttpServletReuest reference. 
+		c.  response : response is type of implicit object it is equal to HttpServletResponse reference. 
+ 
+3.	Jsp action tags 
+
+Limitation of JSP :
+---------------------
+1.	JSP is not a secure. If we write business logic or database logic using jdbc or hibernate in jsp every one can see the code. 
+2.	JSP is again type of servlet. When we run jsp program internally it will convert to servlet ie Page Translation phase. To performance wise jsp is slower than servlet. 
+3.	In JSP we can include or forward whole page but if we want include few line of code not possible. In JSP re-usability is difficult. 
+
+
+If we use Servlet, Inside a Servlet doGet or doPost if we use business logic or databse logic using JDBC or Hiberante that code become local to that servlet. 
+
+
+
+
+
+
+
+MVC : Model View Controller 
+--------------------------------
+View - HTML or JSP : console or command prompt replace by browser 
+Controller -	Servlet :	main class is replace by Servlet 
+Model -
+		Java Bean class 
+		Service class 
+		Dao class using JDBC or Hibernate 
+		Resource class 
+
+
+Control Flow:
+---------------
+View (JSP)--Controller (Servlet)---Service layer - Dao Layer - Resource layer - Database 
+
+May be insert or delete or update or retrieve operation 
+
+View is JSP or HTML 
+Controller is Servlet.
+Web Container is responsible to create the object and maintain the life of the Servlet and JSP. 
+Model layer is normal java classes. So here we have to maintain the life the model layer. 
+
