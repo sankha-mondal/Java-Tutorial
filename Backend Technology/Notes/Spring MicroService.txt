@@ -1,0 +1,122 @@
+Spring micro service : small service. The service is responsible to do the small task. 
+Web Service 		: giving the service for web application when both application running using different technologies. 
+SOAP Web Service 		: we can consume and produce only in the xml format. 
+Rest Full Web Service 		: we can consume and produce in any format base upon client requirement or application requirements 
+
+Login Module 		Customer module 		product module 	account module 
+	
+			War file and we will deploy this project in production environment. 
+
+Login Module 			deploy independently 
+Customer 			deploy independently 
+Product Module 		deploy independently 
+Account module 		deploy independently 		
+
+According to micro service we can deploy and run all modules independently using different or same  language. Using different server or same server, using database or same database. 
+These all modules interact with each other using REST API call. 
+Micro service is a concept. 
+
+ 
+
+
+Spring boot 
+Spring cloud : spring cloud provide eureka server which help to deploy more than one micro service created using Spring framework. 
+
+Using Spring initializer we will create the Project 
+Eureka Server
+	Starter 
+		Web 
+		Dev starter 
+		Eureka Server 
+
+
+
+
+
+
+
+
+application.properties
+server.port=8761		(this is default port number for eureka server to deploy all micro 
+service project)
+eureka.client.registerWithEureka=false 	this option is use to make the project as  server not a client. 
+eureka.client.fetchRegistry=false 
+
+@SpringBootApplication
+@EnableEurekaServer
+class Demo {
+	public static void main(String args[]) {
+		SpringApplication.run(Demo.class,args);
+		System.out.println(“Eureka Server up”);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Next create the micro service project 
+FirstMicroserviceClient
+	Starter 
+		Web 
+		Devtool
+		EurekaClient
+application.properties
+server.port=8181
+@SpringBootApplication
+@EnableEurekaClient
+class Demo {
+	public static void main(String args[]) {
+		SpringApplication.run(Demo.class,args);
+		System.out.println(“Eureka First Client up”);
+}
+}
+
+
+http://localhost:8761
+
+Second micro service project 
+
+ 
+
+
+
+Third micro service with interact with database 
+AccountService
+		Web starter 
+		Jdbc starter 
+		Jpa starter 
+		My sql connector jar file 
+		Dev tool 
+		Eureka Client 
+
+		Create Account - post 
+		getBalance when we pass accno
+
+ 
+
+
+
+Paytm service 
+		
+		Web starter 
+		Jdbc starter 
+		Jpa starter 
+		My sql connector jar file 
+		Dev tool 
+		Eureka Client 
+In database we will create paytm database and patyml table with pid and accno
+
+ 
