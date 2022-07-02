@@ -18,7 +18,7 @@ import com.bean.Product;
 import com.service.ProductService;
 
 @RestController
-@RequestMapping("products")		// http://localhost:8081/products/
+@RequestMapping("products")	          // http://localhost:8081/products/
 @CrossOrigin			    // Enable cors policies 
 public class ProductController {
 
