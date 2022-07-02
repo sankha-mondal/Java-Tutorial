@@ -7,8 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication(scanBasePackages = "com")			// Use to enable @Restcontroller, @Service and @Repository 
-@EntityScan(basePackages = "com.bean")						// Use to enable entity class 
-@EnableJpaRepositories(basePackages = "com.repository")		// Jpa Repository 
+@EntityScan(basePackages = "com.bean")				        // Use to enable entity class 
+@EnableJpaRepositories(basePackages = "com.repository")		        // Jpa Repository 
 public class SpringBootWithRestWithSpringDataApplication {
 
 	public static void main(String[] args) {
