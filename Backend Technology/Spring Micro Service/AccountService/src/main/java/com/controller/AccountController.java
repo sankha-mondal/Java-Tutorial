@@ -21,12 +21,14 @@ public class AccountController {
 	@Autowired
 	AccountService accountService;
 	
+	//  http://localhost:8383/account/create
 	@PostMapping(value = "create",consumes = MediaType.APPLICATION_JSON_VALUE)
 	public String createAccount(@RequestBody Account account) {
 		System.out.println(account.getAccno());
 		return accountService.createAccount(account);
 	}
 	
+	//  http://localhost:8383/account/findAccountDetails/{accno}
 	@GetMapping(value = "findAccountDetails/{accno}")
 	public String findAccountDetails(@PathVariable("accno") int accno) {
 		return accountService.getAccountDetails(accno);
