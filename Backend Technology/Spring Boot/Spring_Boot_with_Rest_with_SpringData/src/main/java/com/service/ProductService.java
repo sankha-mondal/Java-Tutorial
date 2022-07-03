@@ -40,10 +40,10 @@ public class ProductService {
 	public String updateProduct(Product product) {
 		Optional<Product> op =  productRepository.findById(product.getPid());
 			if(op.isPresent()) {
-					Product p = op.get();
-					p.setPrice(product.getPrice());
-					productRepository.saveAndFlush(p);
-					return "Product updated successfully";
+				Product p = op.get();
+				p.setPrice(product.getPrice());
+				productRepository.saveAndFlush(p);
+				return "Product updated successfully";
 			} else {
 				return "Product not present";
 			}
@@ -55,9 +55,9 @@ public class ProductService {
 	public String deleteProduct(int pid) {
 		Optional<Product> op =  productRepository.findById(pid);
 			if(op.isPresent()) {
-					Product p = op.get();
-					productRepository.delete(p);
-					return "Product deleted successfully";
+				Product p = op.get();
+				productRepository.delete(p);
+				return "Product deleted successfully";
 			} else {
 				return "Product not present";
 			}
@@ -70,8 +70,9 @@ public class ProductService {
 	public Product findProductById(int pid) {
 		Optional<Product> op =  productRepository.findById(pid);
 			if(op.isPresent()) {
-					Product p = op.get();
-					return p;
+				Product p = op.get();
+				return p;
+				// return "Product name: "+p.getPname()+". Price: "+p.getPrice();
 			} else {
 				return null;
 			}
