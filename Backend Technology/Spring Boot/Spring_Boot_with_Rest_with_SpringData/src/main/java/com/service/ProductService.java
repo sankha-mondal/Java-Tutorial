@@ -72,9 +72,9 @@ public class ProductService {
 			if(op.isPresent()) {
 				Product p = op.get();
 				return p;
-				// return "Product name: "+p.getPname()+". Price: "+p.getPrice();
+				// return "Product name: "+p.getPname()+". Price: "+p.getPrice();  //  this will work only when the return type is String.
 			} else {
-				return null;
+				return null;   //   return "Product not found";
 			}
 		}
 	
