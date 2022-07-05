@@ -50,7 +50,7 @@ public class EmployeeController {
 			return emp;
 		}
 		
-		// http://localhost:9090/employeeDetails
+		// http://localhost:9090/employeeDetails | Result will be in JSON format
 		@RequestMapping(value = "employeeDetails",produces = MediaType.APPLICATION_JSON_VALUE)
 		public List<Employee> getAllEmployee() {
 			List<Employee> listOfEmp = new ArrayList<Employee>();
