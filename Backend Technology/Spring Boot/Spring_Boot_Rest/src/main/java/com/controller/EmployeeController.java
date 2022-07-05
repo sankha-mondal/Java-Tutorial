@@ -17,7 +17,9 @@ import com.bean.Employee;
 @RestController
 public class EmployeeController {
 
-		//  Get methods:-
+		//  				********************************** Get methods **********************************
+	
+	
 	
 		// http://localhost:9090/say | Result will be in String format
 		@RequestMapping(value = "say")
@@ -84,8 +86,12 @@ public class EmployeeController {
 			return "Welcome user to path param "+pass;
 		}
 		
+	
+	
 		
-		//  Post methods:-
+		//  				********************************** Post methods **********************************
+	
+	
 		
 		// http://localhost:9090/postMethod 
 		@RequestMapping(value = "postMethod",method = RequestMethod.POST)
@@ -101,8 +107,11 @@ public class EmployeeController {
 			return "Welcome Mr "+emp.getName();
 		}
 		
+	
 		
-		//  Put method:-
+		//  				********************************** Put method **********************************
+	
+	
 		
 		// http://localhost:9090/updateEmployee
 		@RequestMapping(value = "updateEmployee",consumes = MediaType.APPLICATION_JSON_VALUE,
@@ -112,8 +121,12 @@ public class EmployeeController {
 			return "Welcome Mr "+emp.getName()+" for update method ";
 		}
 		
+	
+	
 		
-		//  Delete method:-
+		//  				********************************** Delete method **********************************
+	
+	
 		
 		// http://localhost:9090/deleteEmployee/100
 		@RequestMapping(value = "deleteEmployee/{id}",method = RequestMethod.DELETE)
