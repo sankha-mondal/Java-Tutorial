@@ -68,7 +68,7 @@ public class EmployeeController {
 			return "Welcome user to query param... "+name;
 		}
 		
-		// http://localhost:9090/query?name=Ravi&pass=123s
+		// http://localhost:9090/queryMultiple?name=Ravi&pass=123s
 		@RequestMapping(value = "queryMultiple")
 		public String queryParamMultiple(@RequestParam("name") String name,@RequestParam("pass") String pass) {
 			return "Welcome user to query param "+pass;
@@ -80,7 +80,7 @@ public class EmployeeController {
 			return "Welcome user to path param "+name;
 		}
 		
-		// http://localhost:9090/path/Ravi/123
+		// http://localhost:9090/pathMultiple/Ravi/123
 		@RequestMapping(value = "pathMultiple/{name}/{pass}")
 		public String pathParamMultiple(@PathVariable("name") String name,@PathVariable("pass") String pass) {
 			return "Welcome user to path param "+pass;
