@@ -4,7 +4,7 @@
 <hibernate-configuration>
  <session-factory>
   <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>	<!-- add  cj -->
-  <property name="hibernate.connection.password">Sankha@12</property>						<!-- add password -->
+  <property name="hibernate.connection.password">Sankha@12</property>				<!-- add password -->
   <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/newdb</property>	<!-- add port No & database name -->
   <property name="hibernate.connection.username">root</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
