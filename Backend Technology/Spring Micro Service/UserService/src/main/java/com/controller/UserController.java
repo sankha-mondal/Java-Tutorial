@@ -22,7 +22,7 @@ import com.service.UserService;
 
 
 @RestController
-@RequestMapping("users")	// http://localhost:8081/products/
+@RequestMapping("users")	    // http://localhost:8081/users/
 @CrossOrigin			    // Enable cors policies 
 public class UserController {
 
