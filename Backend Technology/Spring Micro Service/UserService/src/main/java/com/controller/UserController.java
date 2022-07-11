@@ -99,6 +99,15 @@ public class UserController {
 	}
 	
 	
+	//  Retrieve data by Email & password Operation:-
+	
+	//  http://localhost:8585/users/findUserByEmail1/{uEmail}/{uPassword}
+	@GetMapping(value = "findUserByEmail1/{uEmail}/{uPassword}")
+	public String findUserById(@PathVariable("uEmail") String uEmail, @PathVariable("uPassword") String uPassword) {
+		return userService.findUserByEmail1(uEmail,uPassword);
+	}
+	
+	
 	//  User defined | Query: Order By User Id asc/desc:-
 	
 	//  http://localhost:8585/users/sortUserById
