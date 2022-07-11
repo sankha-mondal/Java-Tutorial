@@ -82,6 +82,24 @@ public class UserService {
 		}
 	
 	
+	//  Retrieve data by Email & Password Operation:-
+	
+	public String findUserByEmail1(String uEmail, String uPassword) {
+		Optional<User> op = userRepository.findById(uEmail);
+		System.out.println(op);
+		//System.out.println(User);
+			if(op.isPresent()) {
+				User u = op.get();
+				if(u.getuPassword().equals(uPassword)) {
+					return "Welcome User";
+				} else {
+					return "Password may be worng";
+				}
+			} else {
+				return "Email or Password may be worng";
+			}
+		}
+	
 	
 	//  Retrieve data by Email Operation:-
 	
