@@ -28,7 +28,7 @@ public class Student {
 	@Column(name="stu_email")
 	private String email;
 	
-	//Set up mapping between teacher and teacherDetails table | teacher has teacherDetails
+	//Set up mapping between student & Address table | Student has Address
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="address_id")
 	private Address studentAddress;
