@@ -29,8 +29,8 @@ public class ProductController {
 	
 	//  Retrieve Operation:-
 	
-	// http://localhost:8081/products/findAll
-	@GetMapping(value = "findAll",produces = MediaType.APPLICATION_JSON_VALUE)
+	// http://localhost:8081/products/findAllProduct
+	@GetMapping(value = "findAllProduct",produces = MediaType.APPLICATION_JSON_VALUE)
 	public List<Product> findAllProduct() {
 		return productService.findAllProduct();
 	}
