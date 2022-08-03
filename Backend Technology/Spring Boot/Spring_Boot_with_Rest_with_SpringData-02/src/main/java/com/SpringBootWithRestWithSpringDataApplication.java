@@ -17,4 +17,8 @@ public class SpringBootWithRestWithSpringDataApplication {
 	}
 }
 
+	/**
+	 *   Dependencies: jpa, JDBC, web, devtools, mysql
+	 *   Run as: Java Application
+	 */
 
