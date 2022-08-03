@@ -17,4 +17,11 @@ public class User_Info_Application_Main {
 	}
 }
 
+	/**
+	 *   Dependencies: jpa, JDBC, web, devtools, mysql
+	 *   Run as: Java Application
+	 */
+
+
+
 
