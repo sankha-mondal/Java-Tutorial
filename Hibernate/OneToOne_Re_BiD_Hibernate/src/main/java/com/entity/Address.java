@@ -14,51 +14,28 @@ import javax.persistence.Table;
 public class Address {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)   // auto-increment
-	@Column(name="add_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "address_id")
 	private int id;
 	
-	@Column(name="add_state")
-	private String state;
-	
-	@Column(name="add_city")
+	@Column(name = "address_city")	
 	private String city;
 	
-	@OneToOne(mappedBy = "studentAddress",cascade = CascadeType.ALL)
+	@OneToOne(mappedBy = "address")  //(cascade = CascadeType.ALL) 
 	private Student student;
 	
+	/**
+	 *  1. (cascade = CascadeType.ALL) if we use this then accordingly 
+	 *     all the mapped date will be effected. Like on Delete operation 
+	 *     the data will delete from mapped table. 
+	 *  
+	 *  2. [mappedBy] is used to give the preference of creating column
+	 *     in Student table.
+	 *     
+	 *  3. [mappedBy] name should be as same as the reference of the
+	 *     Address of Student table here mappedBy = "address".
+	 */
 	
 	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getState() {
-		return state;
-	}
 	
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public Student getStudent() {
-		return student;
-	}
-
-	public void setStudent(Student student) {
-		this.student = student;
-	}
-
 }
