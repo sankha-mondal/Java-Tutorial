@@ -5,17 +5,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Employees {
+	
 	@Id
 	private int id;
 	private String name;
-	private int epid;
 	
-	public int getEpid() {
-		return epid;
-	}
-	public void setEpid(int epid) {
-		this.epid = epid;
-	}
 	public int getId() {
 		return id;
 	}
