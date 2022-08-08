@@ -8,33 +8,45 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class SkillSet {
+public class Project {
+	
 	@Id
-	private int skillid;
-	private String skillname;
-	@ManyToMany(cascade = CascadeType.ALL)
-	private List<EmployeeDetails> listOfEmp;
+	@Column(name = "p_id")
+	private int Pid;
 	
+	@Column(name = "project_name")
+	private String projetName;
 	
-	
-	public int getSkillid() {
-		return skillid;
-	}
-	public void setSkillid(int skillid) {
-		this.skillid = skillid;
-	}
-	public String getSkillname() {
-		return skillname;
-	}
-	public void setSkillname(String skillname) {
-		this.skillname = skillname;
-	}
-	public List<EmployeeDetails> getListOfEmp() {
-		return listOfEmp;
-	}
-	public void setListOfEmp(List<EmployeeDetails> listOfEmp) {
-		this.listOfEmp = listOfEmp;
+	@ManyToMany(mappedBy = "projects")
+	private List<Employees> employees;
+
+	public int getPid() {
+		return Pid;
 	}
 
+	public void setPid(int pid) {
+		Pid = pid;
+	}
+
+	public String getProjetName() {
+		return projetName;
+	}
+
+	public void setProjetName(String projetName) {
+		this.projetName = projetName;
+	}
+
+	public List<Employees> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(List<Employees> employees) {
+		this.employees = employees;
+	}
+	
+	
+
 }
+
+
 
