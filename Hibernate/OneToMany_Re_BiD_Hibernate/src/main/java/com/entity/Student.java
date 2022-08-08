@@ -26,14 +26,14 @@ public class Project {
 		
 		@OneToMany(mappedBy = "project",
 				cascade= {CascadeType.PERSIST, CascadeType.MERGE,CascadeType.DETACH, CascadeType.REFRESH})
-	//	@JoinColumn(name="P_E_id", referencedColumnName = "product_id")  ❌❌❌
+		//  @JoinColumn(name="P_E_id", referencedColumnName = "product_id")  ❌❌❌
 		private List<Employees> listOfEmp;	// Project has many Employees
 		
 		/**
 		 *  1. The PK of Project table becomes the FK of Employees table.
 		 *  2. "P_E_id" column will be created in Employees table.
 		 *  
-		 *  3. referencedColumnName must not be in this class.
+		 *  3. @JoinColumn & referencedColumnName must not be in this class.
 		 *  
 		 *  
 		 *  4. [mappedBy] is used to give the preference of creating column
