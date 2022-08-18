@@ -197,7 +197,7 @@ public class UserController {
 		
 		//  Retrieve data by Name & Password Operation:-   Op:7A
 		
-		//  http://localhost:8080/users/findUserByName_Pass_1/{uName}/{uPassword}
+		//  http://localhost:8080/users/findUserByName_Pass/{uName}/{uPassword}
 		@GetMapping(value = "findUserByName_Pass/{uName}/{uPassword}")
 		public List<User> findUserByName_Pass(@PathVariable("uName") String uName,@PathVariable("uPassword") String uPassword) {
 			return userService.findUserByName_Pass(uName,uPassword);
