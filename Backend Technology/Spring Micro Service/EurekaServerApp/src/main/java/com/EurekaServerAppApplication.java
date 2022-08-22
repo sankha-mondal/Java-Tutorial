@@ -14,3 +14,8 @@ public class EurekaServerAppApplication {
 	}
 
 }
+
+		/**
+		 *   Dependencies: web, devtools, Eureka Server
+		 *   Run as: Java Application
+		 */
