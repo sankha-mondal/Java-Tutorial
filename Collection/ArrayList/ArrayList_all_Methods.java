@@ -80,7 +80,8 @@ System.out.println("\n----------------------------------------------------------
 		      System.out.println(i);
 	    }
 		System.out.println("\nSort an ArrayList: Descending order");
-		Collections.sort(str,Comparator.reverseOrder() );
+		//Collections.sort(str,Comparator.reverseOrder() );
+		Collections.reverse(str);
 		for (String i : str) {
 		      System.out.println(i);
 	    }
