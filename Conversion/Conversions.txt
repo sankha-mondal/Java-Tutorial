@@ -161,6 +161,7 @@ ________________________________________________________________________
 
 🔴 Convert int to Sttring:
 -----------------------------
+Ex 1:
 public class Main {
 	public static void main(String[] args) {
 		int a = 123;
@@ -169,4 +170,16 @@ public class Main {
 	}
 }
 O/p: 123 in string
+
+Ex 2:
+public class Main {  
+	public static void main(String args[]){  
+		int i=200;  
+		String s=String.valueOf(i);  
+		System.out.println(i+100);   // O/p:300   
+  		System.out.println(s+100);  // O/p:200100   
+	}
+} 
+
+
 
