@@ -57,11 +57,23 @@ System.out.println("\n----------------------------------------------------------
 
 System.out.println("\n------------------------------------------------------------------");	
 
-		Iterator itr = car.descendingIterator();
-        		System.out.println("Elements in Reverse Order:");
+
+        		TreeSet<String> tree = new TreeSet<String>();
+		
+		System.out.println("HashSet add() method: To add list elements");
+		    tree.add("Mango");
+		    tree.add("Apple");
+		    tree.add("Onion");                        //  To add list elements  					  //  add()
+		    tree.add("Karrot");
+		    tree.add("Orange");
+		    tree.add("Leamon");
+		    System.out.println(tree);
+		    
+		   Iterator itr = car.descendingIterator();   //  Applicable for TreeSet Only
+        		   System.out.println("Elements in Reverse Order:");
         			while (itr.hasNext()) {
        				System.out.println(itr.next());
-        		}
+        		                 }
 
 
 
