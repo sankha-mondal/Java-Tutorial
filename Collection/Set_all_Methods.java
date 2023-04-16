@@ -54,6 +54,18 @@ System.out.println("\n----------------------------------------------------------
 		for (String i : car) {
 			  System.out.print(i + " ");
 			}
+
+System.out.println("\n------------------------------------------------------------------");	
+
+		Iterator itr = car.descendingIterator();
+        		System.out.println("Elements in Reverse Order:");
+        			while (itr.hasNext()) {
+       				System.out.println(itr.next());
+        		}
+
+
+
+
 			
 	}
 
