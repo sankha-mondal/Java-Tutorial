@@ -33,5 +33,19 @@ class Task extends Thread {
     
 }
 
-	/*
+	 /* O/p:
+
+  	Hello there..
+        Number 0 - Thread-A
+	Number 0 - Thread-B
+	Number 1 - Thread-B
+	Number 2 - Thread-B
+	Number 1 - Thread-A
+	Number 3 - Thread-B
+	Number 4 - Thread-B
+	Number 2 - Thread-A
+	Number 3 - Thread-A
+	Number 4 - Thread-A
+
+        */
 
