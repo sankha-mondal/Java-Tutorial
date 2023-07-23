@@ -24,3 +24,19 @@ class Task extends Thread {
     	}
     
 }
+
+       /* O/p:
+
+  	Hello there..
+                 Number 0
+	Number 0
+	Number 1
+	Number 2
+	Number 1
+	Number 3
+	Number 4
+	Number 2
+	Number 3
+	Number 4
+
+        */
