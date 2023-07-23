@@ -17,10 +17,10 @@ public class Basic_Thread_Exm {
 
 class Task extends Thread {
     
-    public void run() {
-        for(int i=0;i<5;i++) {
-            System.out.println("Number "+i);
-        }
-    }
+    	public void run() {
+        	          for(int i=0;i<5;i++) {
+            		System.out.println("Number "+i);
+        	          }
+    	}
     
 }
