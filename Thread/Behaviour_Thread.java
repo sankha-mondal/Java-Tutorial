@@ -46,13 +46,13 @@ public class Behaviour_Thread {
 			    public void run() {
 			           try {
 			                for(int i=0;i<5;i++) {
-			                	      Thread.sleep(400);
+			                	 Thread.sleep(400);
 			                       System.out.println("Thread-3 is running");
 			                }
 			           }
-		                    catch (Exception e) {
-			                 System.out.println("Something went wrong: " + e);
-		                    }
+		                   catch (Exception e) {
+			                System.out.println("Something went wrong: " + e);
+		                   }
 			     }
 			});
 			t3.start();
