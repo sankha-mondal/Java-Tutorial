@@ -50,9 +50,9 @@ public class Behaviour_Thread {
 			                       System.out.println("Thread-3 is running");
 			                }
 			           }
-		            	           catch (Exception e) {
-			                   System.out.println("Something went wrong: " + e);
-		                            }
+		          catch (Exception e) {
+			       System.out.println("Something went wrong: " + e);
+		                         }
 			    }
 			});
 			t3.start();
