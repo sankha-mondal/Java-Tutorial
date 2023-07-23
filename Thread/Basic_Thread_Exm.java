@@ -28,7 +28,7 @@ class Task extends Thread {
        /* O/p:
 
   	Hello there..
-    Number 0
+           Number 0
 	Number 0
 	Number 1
 	Number 2
