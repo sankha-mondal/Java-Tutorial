@@ -29,7 +29,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	
 	@Bean
-	public PasswordEncoder passwordEncoder(){
+	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 	
@@ -41,8 +41,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Bean
 	@Override
-	public AuthenticationManager authenticationManagerBean() throws Exception
-	{
+	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
 	}
 	
@@ -63,7 +62,5 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 		.and()
 		.addFilterBefore(customJwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 	}
-
-
 
 }
