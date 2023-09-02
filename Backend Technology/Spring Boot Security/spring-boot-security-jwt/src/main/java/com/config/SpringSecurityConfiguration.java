@@ -48,13 +48,20 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable()
-		.authorizeRequests().antMatchers("/helloadmin").hasRole("ADMIN")
+	  http.csrf().disable()
+		.authorizeRequests()
+		
+		.antMatchers("/helloadmin").hasRole("ADMIN")
 		.antMatchers("/hellouser").hasAnyRole("USER","ADMIN")
-		.antMatchers("/authenticate", "/register","/noauth/**").permitAll().anyRequest().authenticated()
-		.and().exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).
-		and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).
-		and().addFilterBefore(customJwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+		.antMatchers("/authenticate", "/register","/noauth/**")
+		.permitAll().anyRequest().authenticated()
+		  
+		.and()
+		.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint)
+		.and()
+		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+		.and()
+		.addFilterBefore(customJwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
 	}
 
 
