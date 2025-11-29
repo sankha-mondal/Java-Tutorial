@@ -1,1 +1,24 @@
 # Spring Boot Interview Q&A:
+
+1. The client sends the data in the URL. Which annotation is used to retrieve thsi data?
+=> @PathVariable
+=> @GetMapping(value = "findUserByName/{uName}",produces = MediaType.APPLICATION_JSON_VALUE)
+		public List<User> findUserByName(@PathVariable("uName") String uName){
+			return userService.findUserByName(uName);
+		}
+
+2. The client sends the data from a from that uses get method. Which annotation helps to retriee this data?
+=> @RequestParam
+=> public List<User> user_pagi(@RequestParam(value = "pageNumber", defaultValue = AppConsts.PAGE_NUMBER, required = false) Integer pageNumber,
+	                                @RequestParam(value = "pageSize", defaultValue = AppConsts.PAGE_SIZE, required = false) Integer pageSize) {
+	        // PageRequest request = PageRequest.of(page - 1, size);
+	        List<User> userAll = this.userService.findUser_Pagi(pageNumber, pageSize);
+	        
+	        return userAll;
+	    } 
+
+3. Which annotation marks the main class as a Spring Boot Application?
+=> @SpringBootApplication = @ComponentScan + @AutoConfiguration + @EnableAutoConfiguration
+
+4. How to change server port:
+=> In application.properties/yml file add server.port=9090 .
